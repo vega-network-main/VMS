@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+}
+
+group = 'org.veganetwork'
+version = '1.20.1-ALPHA'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    archiveFileName = "${rootProject.name}-" + getBranchHash() + ".jar"
+    manifest {
+        attributes 'Main-Class' : 'org.veganetwork.Main'
+    }
+    from {
+        configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it)}
+    }
+}
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+def getBranchHash() {
+    def branchHash = "git rev-parse --short HEAD".execute().text.trim()
+    return branchHash
+}
+
+dependencies {
+
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.json:json:20230618'
+}
+
+test {
+    useJUnitPlatform()
+}
+
