@@ -1,0 +1,40 @@
+# VEGA Core main config
+# IP, ports, motd, RCON, JMX, Net Compression
+
+# Server internal IP +
+server_ip: 0.0.0.0
+# Server port +
+server_port: 26000
+# RCON port -
+rcon_port: 26001
+# RCON password (if not set or less then 16 chars, disabled) -
+rcon_password:
+# MotD for server +
+motd: V server instance
+# JMX monitoring -
+jmx_monitoring: false
+#network-threshold=256 (base) +
+network_compression: 256
+
+# Online mode, whitelist, max_players
+
+# Online mode (Mojang auth) -
+online_mode: false
+# Whitelist (based on nicknames) -
+whitelist: false
+# Max allowed players +
+max_players: 25
+
+# Other
+
+# Brand name in F3 +
+brand_name: "V Core"
+#spawn-protection=0
+#sync-chunk-writes=false
+#use-native-transport=true
+#view-distance=10
+#simulation-distance=10
+#broadcast-console-to-ops=true
+#broadcast-rcon-to-ops=true
+#motd=Create Adventure
+#network-compression-threshold=256

@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f84e6de-3f7e-4aec-98e2-ab7f801fe038" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/machinet.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigsInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/logger/LoggerInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/network/NetworkInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/server-config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/server-world.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigsInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigsInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/logger/LoggerInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/network/NetworkInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/server-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/server-config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +55,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -82,13 +90,79 @@
       <recent name="D:\Projects\Java\VEGA-Core" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="VEGA-Core [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.VEGA-Core [jar]">
+    <configuration name="VEGA-Core [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="VEGA-Core [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--scan" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="VEGA-Core [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="VEGA-Core [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--stacktrace" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -108,6 +182,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.VEGA-Core [jar]" />
+        <item itemvalue="Gradle.VEGA-Core [buildDependents]" />
+        <item itemvalue="Gradle.VEGA-Core [clean]" />
+        <item itemvalue="Gradle.VEGA-Core [assemble]" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +197,12 @@
       <option name="presentableId" value="Default" />
       <updated>1700666078581</updated>
       <workItem from="1700666079614" duration="3833000" />
-      <workItem from="1700674773458" duration="1487000" />
+      <workItem from="1700674773458" duration="7827000" />
+      <workItem from="1700732338049" duration="9037000" />
+      <workItem from="1700842357036" duration="2389000" />
+      <workItem from="1700845670069" duration="1423000" />
+      <workItem from="1700849830197" duration="202000" />
+      <workItem from="1700850087539" duration="10176000" />
     </task>
     <servers />
   </component>
@@ -141,32 +223,30 @@
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
       <map>
-        <entry key="6f2acc">
+        <entry key="6f058d">
           <value>
             <ChatHistoryModel>
-              <option name="id" value="6f2acc" />
-              <option name="initiateTms" value="1700675032841" />
-              <option name="request" value="let's add a S4F Logger in class LoggerInit and make it public" />
-              <option name="response" value="" />
-              <option name="usedLocalFilePaths">
+              <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" />
+                  <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
                 </list>
               </option>
-            </ChatHistoryModel>
-          </value>
-        </entry>
-        <entry key="a48067">
-          <value>
-            <ChatHistoryModel>
-              <option name="id" value="a48067" />
-              <option name="initiateTms" value="1700669216769" />
-              <option name="isStopped" value="true" />
-              <option name="request" value="let's add a S4F Logger in class LoggerInit and make it public" />
+              <option name="id" value="6f058d" />
+              <option name="initiateTms" value="1700846875866" />
+              <option name="request" value="log4j:WARN No appenders could be found for logger (main).&#10;log4j:WARN Please initialize the log4j system properly.&#10;log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.&#10;&#10;I have in resources log4j2.xml&#10;&#10;Fix the code or reference" />
               <option name="response" value="" />
+              <option name="responseDescription" value="Based on the error message, it seems that the log4j system is not properly initialized. To fix this issue, you can try the following steps:&#10;&#10;1. Make sure that the log4j2.xml file is located in the correct directory: `src/main/resources`.&#10;&#10;2. Check if the log4j2.xml file is being loaded correctly. You can add the following line of code at the beginning of your `LoggerInit` class to explicitly load the log4j configuration file:&#10;&#10;   ```java&#10;   import org.apache.logging.log4j.core.config.Configurator;&#10;   &#10;   public class LoggerInit {&#10;       static {&#10;           Configurator.initialize(null, &quot;src/main/resources/log4j2.xml&quot;);&#10;       }&#10;       // rest of the class code...&#10;   }&#10;   ```&#10;&#10;   This code initializes the log4j system with the specified configuration file.&#10;&#10;3. Ensure that you have the necessary log4j dependencies in your project's build file (e.g., pom.xml for Maven or build.gradle for Gradle). Here is an example for Maven:&#10;&#10;   ```xml&#10;   &lt;dependencies&gt;&#10;       &lt;!-- other dependencies... --&gt;&#10;       &lt;dependency&gt;&#10;           &lt;groupId&gt;org.apache.logging.log4j&lt;/groupId&gt;&#10;           &lt;artifactId&gt;log4j-core&lt;/artifactId&gt;&#10;           &lt;version&gt;2.14.1&lt;/version&gt;&#10;       &lt;/dependency&gt;&#10;   &lt;/dependencies&gt;&#10;   ```&#10;&#10;   Make sure to replace the version number with the appropriate version of log4j.&#10;&#10;4. If you have followed the above steps and the issue still persists, you can try adding the log4j configuration programmatically in your `LoggerInit` class. Here's an example:&#10;&#10;   ```java&#10;   import org.apache.logging.log4j.LogManager;&#10;   import org.apache.logging.log4j.core.LoggerContext;&#10;   &#10;   public class LoggerInit {&#10;       static {&#10;           LoggerContext context = (LoggerContext) LogManager.getContext(false);&#10;           context.setConfigLocation(LoggerInit.class.getResource(&quot;/log4j2.xml&quot;).toURI());&#10;       }&#10;       // rest of the class code...&#10;   }&#10;   ```&#10;&#10;   This code sets the log4j configuration location using the `setConfigLocation` method.&#10;&#10;After making these changes, try running your application again and see if the log4j system initializes properly without any warnings." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1700846882912" />
+              <option name="usedIndexedFilePaths">
+                <list>
+                  <option value="D:\Projects\Java\VEGA-Core\src\main\java\org\veganetwork\logger\LoggerInit.java" />
+                </list>
+              </option>
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/logger/LoggerInit.java" />
+                  <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
                 </list>
               </option>
             </ChatHistoryModel>

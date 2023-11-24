@@ -1,11 +1,15 @@
 package org.veganetwork;
 
-import static org.veganetwork.logger.LoggerInit.S4FLogger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.veganetwork.configs.ConfigsInit;
+import org.veganetwork.server.ServerStarter;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
+    public static final Logger logger = LoggerFactory.getLogger("main");
     public static void main(String[] args) {
-        S4FLogger.info("Here");
+        new ConfigsInit();
+        logger.info("Initializing VEGA Core");
+        new ServerStarter(logger).ServerStart();
     }
 }

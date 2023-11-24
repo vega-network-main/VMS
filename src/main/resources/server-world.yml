@@ -1,0 +1,22 @@
+# VEGA Core world config
+# Currently not used
+
+#allow-flight=false
+#allow-nether=true
+#difficulty=easy
+#enable-command-block=false
+#force-gamemode=false
+#gamemode=survival
+#generate-structures=true
+#generator-settings={}
+#hardcore=false
+#initial-disabled-packs=create_new_age\:create_new_age_monkey_edition
+#initial-enabled-packs=vanilla,fabric
+#level-name=world
+#level-seed=
+#max-world-size=29999984
+#op-permission-level=4
+#pvp=true
+#spawn-animals=true
+#spawn-monsters=true
+#spawn-npcs=true
