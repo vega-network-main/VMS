@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f84e6de-3f7e-4aec-98e2-ab7f801fe038" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/server-world.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigsInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigsInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/logger/LoggerInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/network/NetworkInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/server-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/server-config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +86,7 @@
       <recent name="D:\Projects\Java\VEGA-Core" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.VEGA-Core [jar]">
+  <component name="RunManager" selected="Gradle.VEGA-Core [clean]">
     <configuration name="VEGA-Core [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -181,9 +177,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.VEGA-Core [clean]" />
         <item itemvalue="Gradle.VEGA-Core [jar]" />
         <item itemvalue="Gradle.VEGA-Core [buildDependents]" />
-        <item itemvalue="Gradle.VEGA-Core [clean]" />
         <item itemvalue="Gradle.VEGA-Core [assemble]" />
       </list>
     </recent_temporary>
@@ -202,7 +198,10 @@
       <workItem from="1700842357036" duration="2389000" />
       <workItem from="1700845670069" duration="1423000" />
       <workItem from="1700849830197" duration="202000" />
-      <workItem from="1700850087539" duration="10176000" />
+      <workItem from="1700850087539" duration="10640000" />
+      <workItem from="1700994945771" duration="2001000" />
+      <workItem from="1701025023401" duration="9000" />
+      <workItem from="1701030299609" duration="3410000" />
     </task>
     <servers />
   </component>

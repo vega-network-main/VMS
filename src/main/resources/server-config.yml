@@ -5,10 +5,6 @@
 server_ip: 0.0.0.0
 # Server port +
 server_port: 26000
-# RCON port -
-rcon_port: 26001
-# RCON password (if not set or less then 16 chars, disabled) -
-rcon_password:
 # MotD for server +
 motd: V server instance
 # JMX monitoring -

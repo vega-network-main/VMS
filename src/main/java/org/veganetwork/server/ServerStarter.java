@@ -1,13 +1,12 @@
 package org.veganetwork.server;
 
-import net.kyori.adventure.text.Component;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.event.GlobalEventHandler;
 import net.minestom.server.instance.InstanceContainer;
 import net.minestom.server.instance.InstanceManager;
 import net.minestom.server.instance.block.Block;
-import net.minestom.server.ping.ResponseData;
 import org.slf4j.Logger;
+import org.veganetwork.server.game.CommandSystem;
 import org.veganetwork.server.game.EventSystem;
 
 import static org.veganetwork.configs.ConfigServer.*;
@@ -18,8 +17,6 @@ public class ServerStarter {
         this.logger = logger;
     }
     public void ServerStart(){
-
-
         MinecraftServer server = MinecraftServer.init();
         MinecraftServer.setTerminalEnabled(true);
         MinecraftServer.setBrandName(brand_name);
@@ -35,6 +32,8 @@ public class ServerStarter {
         // Event System
         EventSystem eventSystem = new EventSystem(globalEventHandler, instanceContainer);
         eventSystem.RegisterEvents();
+
+        new CommandSystem();
 
         server.start(server_ip, server_port);
 

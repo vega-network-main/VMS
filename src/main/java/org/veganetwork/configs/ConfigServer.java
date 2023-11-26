@@ -7,8 +7,6 @@ public class ConfigServer {
     public static String server_ip;
     public static int server_port;
     public static int network_compression;
-    public static int rcon_port;
-    public static String rcon_password;
     public static String motd;
     public static int max_players;
     public static String brand_name;
