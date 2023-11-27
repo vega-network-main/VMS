@@ -52,5 +52,8 @@ public class PlayerEventHandler {
 //            Player player = event.getPlayer();
 //            player.setGameMode(event.getNewGameMode());
 //        });
+        gEventHandler.addListener(PlayerCommandEvent.class, event -> {
+            logger.info(String.format("%s executed command %s", event.getPlayer(), event.getCommand()));
+        });
     }
 }

@@ -5,6 +5,7 @@ import net.minestom.server.command.CommandManager;
 import net.minestom.server.instance.InstanceContainer;
 import org.veganetwork.server.game.commands.GamemodeCommand;
 import org.veganetwork.server.game.commands.KillCommand;
+import org.veganetwork.server.game.commands.PlayerMsgCommand;
 import org.veganetwork.server.game.utilitaires.PlayerUtility;
 
 public class CommandSystem {
@@ -14,5 +15,6 @@ public class CommandSystem {
         // Here register command
         registerCommand.register(new KillCommand());
         registerCommand.register(new GamemodeCommand());
+        registerCommand.register(new PlayerMsgCommand());
     }
 }

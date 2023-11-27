@@ -26,6 +26,7 @@ public class ServerStarter {
         // Init Instance and Events
         InstanceContainer instanceContainer = instanceManager.createInstanceContainer();
         GlobalEventHandler globalEventHandler = MinecraftServer.getGlobalEventHandler();
+
         instanceContainer.setGenerator(unit -> {
             unit.modifier().fillHeight(0, 40, Block.DIRT);
             unit.modifier().fillHeight(40,41, Block.GRASS_BLOCK);

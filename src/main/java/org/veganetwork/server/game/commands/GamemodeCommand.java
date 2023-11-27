@@ -6,8 +6,6 @@ import net.minestom.server.entity.GameMode;
 import net.minestom.server.entity.Player;
 import org.veganetwork.server.game.utilitaires.PlayerUtility;
 
-import static org.veganetwork.Main.logger;
-
 public class GamemodeCommand extends Command {
     public GamemodeCommand() {
         super("gamemode", "gm");
@@ -15,7 +13,7 @@ public class GamemodeCommand extends Command {
                 sender.sendMessage("Usage: /gamemode <type> <target>"))
         );
 
-        var gamemodeType = ArgumentType.String("gm_type");
+        var gamemodeType = ArgumentType.String("gamemode type");
         var playerArgument = ArgumentType.String("player_id");
 
         addSyntax((sender, context) -> {
@@ -28,7 +26,6 @@ public class GamemodeCommand extends Command {
                     GameMode gm = GameMode.valueOf(gamemode.toUpperCase());
                     player.setGameMode(gm);
                     sender.sendMessage(String.format("Player %s has changed his gamemode to %s", playerName, gamemode));
-                    logger.info(String.format("Player %s executed command /gamemode", playerName));
                 } catch (IllegalArgumentException iae) {
                     sender.sendMessage("Invalid game mode provided");
                 }
@@ -36,5 +33,6 @@ public class GamemodeCommand extends Command {
                 sender.sendMessage(String.format("No for player %s was changed to %s", playerName, gamemode));
             }
         },gamemodeType, playerArgument);
+
     }
 }
