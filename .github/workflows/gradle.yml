@@ -33,4 +33,13 @@ jobs:
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
     - name: Execute Gradle jar
-      run: ./gradlew jar
+      run: |
+        jarFileName="${{ github.repository }}-${{ github.sha }}.jar"
+        ./gradlew jar --no-daemon
+        mv build/libs/*.jar $jarFileName
+        echo "::set-output name=jarFileName::$jarFileName"
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: ${{ needs.build.outputs.jarFileName }}
+        path: ${{ needs.build.outputs.jarFileName }}
