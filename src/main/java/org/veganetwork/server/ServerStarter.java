@@ -18,7 +18,7 @@ public class ServerStarter {
     }
     public void ServerStart(){
         MinecraftServer server = MinecraftServer.init();
-        MinecraftServer.setTerminalEnabled(true);
+        System.setProperty("minestom.terminal.disabled", "false");
         MinecraftServer.setBrandName(brand_name);
         MinecraftServer.setCompressionThreshold(network_compression);
         InstanceManager instanceManager = MinecraftServer.getInstanceManager();
@@ -26,14 +26,16 @@ public class ServerStarter {
         // Init Instance and Events
         InstanceContainer instanceContainer = instanceManager.createInstanceContainer();
         GlobalEventHandler globalEventHandler = MinecraftServer.getGlobalEventHandler();
-        instanceContainer.setGenerator(unit ->
-                unit.modifier().fillHeight(0, 40, Block.GRASS_BLOCK));
+        instanceContainer.setGenerator(unit -> {
+            unit.modifier().fillHeight(0, 40, Block.DIRT);
+            unit.modifier().fillHeight(40,41, Block.GRASS_BLOCK);
+                });
 
         // Event System
         EventSystem eventSystem = new EventSystem(globalEventHandler, instanceContainer);
         eventSystem.RegisterEvents();
-
-        new CommandSystem();
+        // Command System
+        new CommandSystem(instanceContainer);
 
         server.start(server_ip, server_port);
 

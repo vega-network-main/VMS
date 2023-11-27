@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f84e6de-3f7e-4aec-98e2-ab7f801fe038" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/world/WorldSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/server-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/server-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,13 +72,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java/VEGA-Core&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java/MCP-Reborn-1.19&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;D:/Projects/Java/VEGA-Core/src/main/java/org/veganetwork/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -86,7 +88,7 @@
       <recent name="D:\Projects\Java\VEGA-Core" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.VEGA-Core [clean]">
+  <component name="RunManager" selected="Gradle.VEGA-Core [jar]">
     <configuration name="VEGA-Core [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -177,8 +179,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.VEGA-Core [clean]" />
         <item itemvalue="Gradle.VEGA-Core [jar]" />
+        <item itemvalue="Gradle.VEGA-Core [clean]" />
         <item itemvalue="Gradle.VEGA-Core [buildDependents]" />
         <item itemvalue="Gradle.VEGA-Core [assemble]" />
       </list>
@@ -202,6 +204,12 @@
       <workItem from="1700994945771" duration="2001000" />
       <workItem from="1701025023401" duration="9000" />
       <workItem from="1701030299609" duration="3410000" />
+      <workItem from="1701034140629" duration="309000" />
+      <workItem from="1701073823902" duration="757000" />
+      <workItem from="1701074593017" duration="4193000" />
+      <workItem from="1701079967722" duration="1305000" />
+      <workItem from="1701089491317" duration="4848000" />
+      <workItem from="1701104393544" duration="7747000" />
     </task>
     <servers />
   </component>
@@ -222,30 +230,36 @@
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
       <map>
-        <entry key="6f058d">
+        <entry key="65d101">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
                 </list>
               </option>
-              <option name="id" value="6f058d" />
-              <option name="initiateTms" value="1700846875866" />
-              <option name="request" value="log4j:WARN No appenders could be found for logger (main).&#10;log4j:WARN Please initialize the log4j system properly.&#10;log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.&#10;&#10;I have in resources log4j2.xml&#10;&#10;Fix the code or reference" />
+              <option name="id" value="65d101" />
+              <option name="initiateTms" value="1701101851112" />
+              <option name="request" value="[18:16:25 INFO] [Ms-Tick-0]: true&#10;[18:16:25 INFO] [Ms-Tick-0]: returned&#10;[18:16:25 INFO] [Ms-Tick-0]: false&#10;[18:16:25 INFO] [Ms-Tick-0]: nullvovamod&#10;[18:16:25 ERROR] [Ms-Tick-0]: An exception was encountered while executing command: gm CREATIVE vovamod&#10;java.lang.NullPointerException: Cannot invoke &quot;net.minestom.server.entity.Player.setGameMode(net.minestom.server.entity.GameMode)&quot; because &quot;player&quot; is null&#10;        at org.veganetwork.server.game.commands.GamemodeCommand.lambda$new$1(GamemodeCommand.java:29)&#10;        at net.minestom.server.command.CommandParserImpl$ValidExecutableCmd.execute(CommandParserImpl.java:315)&#10;        at net.minestom.server.command.CommandManager.lambda$execute$0(CommandManager.java:118)&#10;        at net.minestom.server.command.CommandManager.execute(CommandManager.java:148)&#10;        at net.minestom.server.listener.ChatMessageListener.commandChatListener(ChatMessageListener.java:28)&#10;        at net.minestom.server.listener.manager.PacketListenerManager.processClientPacket(PacketListenerManager.java:90)&#10;        at net.minestom.server.entity.Player.lambda$interpretPacketQueue$18(Player.java:1879)&#10;        at org.jctools.queues.MpscUnboundedXaddArrayQueue.drain(MpscUnboundedXaddArrayQueue.java:312)&#10;        at net.minestom.server.entity.Player.interpretPacketQueue(Player.java:1879)&#10;        at net.minestom.server.entity.Player.update(Player.java:380)&#10;        at net.minestom.server.entity.Entity.tick(Entity.java:562)&#10;        at net.minestom.server.thread.TickThread.tick(TickThread.java:74)&#10;        at net.minestom.server.thread.TickThread.run(TickThread.java:49)" />
               <option name="response" value="" />
-              <option name="responseDescription" value="Based on the error message, it seems that the log4j system is not properly initialized. To fix this issue, you can try the following steps:&#10;&#10;1. Make sure that the log4j2.xml file is located in the correct directory: `src/main/resources`.&#10;&#10;2. Check if the log4j2.xml file is being loaded correctly. You can add the following line of code at the beginning of your `LoggerInit` class to explicitly load the log4j configuration file:&#10;&#10;   ```java&#10;   import org.apache.logging.log4j.core.config.Configurator;&#10;   &#10;   public class LoggerInit {&#10;       static {&#10;           Configurator.initialize(null, &quot;src/main/resources/log4j2.xml&quot;);&#10;       }&#10;       // rest of the class code...&#10;   }&#10;   ```&#10;&#10;   This code initializes the log4j system with the specified configuration file.&#10;&#10;3. Ensure that you have the necessary log4j dependencies in your project's build file (e.g., pom.xml for Maven or build.gradle for Gradle). Here is an example for Maven:&#10;&#10;   ```xml&#10;   &lt;dependencies&gt;&#10;       &lt;!-- other dependencies... --&gt;&#10;       &lt;dependency&gt;&#10;           &lt;groupId&gt;org.apache.logging.log4j&lt;/groupId&gt;&#10;           &lt;artifactId&gt;log4j-core&lt;/artifactId&gt;&#10;           &lt;version&gt;2.14.1&lt;/version&gt;&#10;       &lt;/dependency&gt;&#10;   &lt;/dependencies&gt;&#10;   ```&#10;&#10;   Make sure to replace the version number with the appropriate version of log4j.&#10;&#10;4. If you have followed the above steps and the issue still persists, you can try adding the log4j configuration programmatically in your `LoggerInit` class. Here's an example:&#10;&#10;   ```java&#10;   import org.apache.logging.log4j.LogManager;&#10;   import org.apache.logging.log4j.core.LoggerContext;&#10;   &#10;   public class LoggerInit {&#10;       static {&#10;           LoggerContext context = (LoggerContext) LogManager.getContext(false);&#10;           context.setConfigLocation(LoggerInit.class.getResource(&quot;/log4j2.xml&quot;).toURI());&#10;       }&#10;       // rest of the class code...&#10;   }&#10;   ```&#10;&#10;   This code sets the log4j configuration location using the `setConfigLocation` method.&#10;&#10;After making these changes, try running your application again and see if the log4j system initializes properly without any warnings." />
+              <option name="responseDescription" value="Based on the error message, it seems that there is a `NullPointerException` in the `GamemodeCommand` class at line 29. The error occurs because the `player` object is null when trying to invoke the `setGameMode` method.&#10;&#10;To fix this issue, you need to make sure that the `player` object is not null before calling the `setGameMode` method. Here's the updated code for the `GamemodeCommand` class:&#10;&#10;```java&#10;public class GamemodeCommand extends Command {&#10;    public GamemodeCommand() {&#10;        super(&quot;gamemode&quot;, &quot;gm&quot;);&#10;        setDefaultExecutor(((sender, context) -&gt;&#10;                sender.sendMessage(&quot;Usage: /gamemode &lt;type&gt; &lt;target&gt;&quot;))&#10;        );&#10;&#10;        var gamemodeType = ArgumentType.String(&quot;gm_type&quot;);&#10;        var playerArgument = ArgumentType.String(&quot;player_id&quot;);&#10;&#10;        addSyntax((sender, context) -&gt; {&#10;            String gamemode = context.get(gamemodeType);&#10;            String playerName = context.get(playerArgument);&#10;            Player player = PlayerUtility.findPlayer(playerName);&#10;            if (player != null) {&#10;                player.setGameMode(GameMode.valueOf(gamemode));&#10;                sender.sendMessage(String.format(&quot;Player %s has changed their gamemode to %s&quot;, playerName, gamemode));&#10;            } else {&#10;                sender.sendMessage(String.format(&quot;Player %s not found.&quot;, playerName));&#10;            }&#10;        }, gamemodeType, playerArgument);&#10;    }&#10;}&#10;```&#10;&#10;In this updated code, I've added a null check for the `player` object before calling the `setGameMode` method. If the `player` object is null, it will send a message indicating that the player was not found.&#10;&#10;Please replace the existing code in the `GamemodeCommand.java` file with this updated code." />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1700846882912" />
+              <option name="responseTms" value="1701101858797" />
               <option name="usedIndexedFilePaths">
                 <list>
-                  <option value="D:\Projects\Java\VEGA-Core\src\main\java\org\veganetwork\logger\LoggerInit.java" />
+                  <option value="D:\Projects\Java\VEGA-Core\src\main\java\org\veganetwork\server\game\events\PlayerEventHandler.java" />
                 </list>
               </option>
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
                 </list>
               </option>
             </ChatHistoryModel>
