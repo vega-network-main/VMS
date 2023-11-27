@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f84e6de-3f7e-4aec-98e2-ab7f801fe038" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/world/WorldSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +78,7 @@
       <recent name="D:\Projects\Java\VEGA-Core" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.VEGA-Core [jar]">
+  <component name="RunManager" selected="Gradle.VEGA-Core [build]">
     <configuration name="VEGA-Core [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -123,6 +113,28 @@
         <option name="taskNames">
           <list>
             <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="VEGA-Core [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -179,8 +191,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.VEGA-Core [jar]" />
+        <item itemvalue="Gradle.VEGA-Core [build]" />
         <item itemvalue="Gradle.VEGA-Core [clean]" />
+        <item itemvalue="Gradle.VEGA-Core [jar]" />
         <item itemvalue="Gradle.VEGA-Core [buildDependents]" />
         <item itemvalue="Gradle.VEGA-Core [assemble]" />
       </list>
@@ -209,7 +222,7 @@
       <workItem from="1701074593017" duration="4193000" />
       <workItem from="1701079967722" duration="1305000" />
       <workItem from="1701089491317" duration="4848000" />
-      <workItem from="1701104393544" duration="7747000" />
+      <workItem from="1701104393544" duration="8899000" />
     </task>
     <servers />
   </component>
@@ -260,6 +273,127 @@
                   <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
                   <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
                   <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="8ce5f7">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                </list>
+              </option>
+              <option name="id" value="8ce5f7" />
+              <option name="initiateTms" value="1701116011105" />
+              <option name="request" value="what if my build.gradle always changes filename (when commits)&#10;&#10;plugins {&#10;    id 'java'&#10;}&#10;&#10;java {&#10;    sourceCompatibility = JavaVersion.VERSION_17&#10;}&#10;&#10;group = 'org.veganetwork'&#10;version = '1.20.1-ALPHA'&#10;&#10;repositories {&#10;    mavenCentral()&#10;    maven { url 'https://jitpack.io' }&#10;}&#10;&#10;jar {&#10;    duplicatesStrategy = 'exclude'&#10;    archiveFileName = &quot;${rootProject.name}-${version}-&quot; + getBranchHash() + &quot;.jar&quot;&#10;    manifest {&#10;        attributes 'Main-Class' : 'org.veganetwork.Main'&#10;    }&#10;    from {&#10;        configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it)}&#10;    }&#10;}&#10;&#10;&#10;" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="If the filename of your JAR file changes dynamically based on the branch hash, you can modify the GitHub workflow file to capture the generated filename and use it when uploading the artifact.&#10;&#10;Here's an updated version of the GitHub workflow file:&#10;&#10;```yaml&#10;name: Build JAR&#10;&#10;on:&#10;  push:&#10;    branches: [ &quot;master&quot; ]&#10;  pull_request:&#10;    branches: [ &quot;master&quot; ]&#10;&#10;permissions:&#10;  contents: write&#10;  pull-requests: write &#10;  issues: read&#10;&#10;jobs:&#10;  build:&#10;&#10;    runs-on: ubuntu-latest&#10;&#10;    steps:&#10;    - uses: actions/checkout@v3&#10;    - name: Set up JDK 17&#10;      uses: actions/setup-java@v3&#10;      with:&#10;        java-version: '17'&#10;        distribution: 'temurin'&#10;    - name: Setup Gradle&#10;      uses: gradle/gradle-build-action@v2&#10;    - name: Execute Gradle jar&#10;      run: |&#10;        jarFileName=&quot;${{ github.repository }}-${{ github.sha }}.jar&quot;&#10;        ./gradlew jar --no-daemon&#10;        mv build/libs/*.jar $jarFileName&#10;        echo &quot;::set-output name=jarFileName::$jarFileName&quot;&#10;    - name: Upload artifact&#10;      uses: actions/upload-artifact@v3&#10;      with:&#10;        name: ${{ needs.build.outputs.jarFileName }}&#10;        path: ${{ needs.build.outputs.jarFileName }}&#10;```&#10;&#10;In this updated file, the `archiveFileName` in the `jar` task of your `build.gradle` file remains the same. However, after running the `./gradlew jar` command, we capture the generated JAR filename by combining the repository name and the commit SHA. We then move the JAR file to the captured filename.&#10;&#10;The captured filename is stored as an output variable `jarFileName` using the `::set-output` command. This output variable is then used in the `actions/upload-artifact` step to specify the name and path of the uploaded artifact.&#10;&#10;Save the updated file and commit it to your repository. The workflow should now execute the Gradle build, generate the JAR file with the dynamic filename, and upload it as an artifact with the correct filename." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1701116018287" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="a10644">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" />
+                  <option value="$PROJECT_DIR$/gradlew.bat" />
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
+                </list>
+              </option>
+              <option name="id" value="a10644" />
+              <option name="initiateTms" value="1701115929458" />
+              <option name="request" value="No files were found with the provided path: $0. No artifacts will be uploaded.&#10;&#10;&#10;name: Build JAR&#10;&#10;on:&#10;  push:&#10;    branches: [ &quot;master&quot; ]&#10;  pull_request:&#10;    branches: [ &quot;master&quot; ]&#10;&#10;permissions:&#10;  contents: write&#10;  pull-requests: write &#10;  issues: read&#10;&#10;jobs:&#10;  build:&#10;&#10;    runs-on: ubuntu-latest&#10;&#10;    steps:&#10;    - uses: actions/checkout@v3&#10;    - name: Set up JDK 17&#10;      uses: actions/setup-java@v3&#10;      with:&#10;        java-version: '17'&#10;        distribution: 'temurin'&#10;    - name: Setup Gradle&#10;      uses: gradle/gradle-build-action@v2&#10;    - name: Execute Gradle jar&#10;      run: ./gradlew jar&#10;    - name: Upload artifact&#10;      uses: actions/upload-artifact@v3&#10;      with:&#10;        name: VCore.jar&#10;        path: $0&#10;&#10;&#10;Fix github workflow file" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="To fix the GitHub workflow file, you need to update the `path` value in the `actions/upload-artifact` step. The `$0` placeholder is not a valid path. You should provide the actual path to the JAR file that you want to upload as an artifact.&#10;&#10;Here's the updated GitHub workflow file:&#10;&#10;```yaml&#10;name: Build JAR&#10;&#10;on:&#10;  push:&#10;    branches: [ &quot;master&quot; ]&#10;  pull_request:&#10;    branches: [ &quot;master&quot; ]&#10;&#10;permissions:&#10;  contents: write&#10;  pull-requests: write &#10;  issues: read&#10;&#10;jobs:&#10;  build:&#10;&#10;    runs-on: ubuntu-latest&#10;&#10;    steps:&#10;    - uses: actions/checkout@v3&#10;    - name: Set up JDK 17&#10;      uses: actions/setup-java@v3&#10;      with:&#10;        java-version: '17'&#10;        distribution: 'temurin'&#10;    - name: Setup Gradle&#10;      uses: gradle/gradle-build-action@v2&#10;    - name: Execute Gradle jar&#10;      run: ./gradlew jar&#10;    - name: Upload artifact&#10;      uses: actions/upload-artifact@v3&#10;      with:&#10;        name: VCore.jar&#10;        path: build/libs/VCore.jar&#10;```&#10;&#10;In this updated file, I assumed that the JAR file is generated in the `build/libs` directory with the name `VCore.jar`. Adjust the `path` value accordingly if the JAR file is located in a different directory or has a different name.&#10;&#10;Save the updated file and commit it to your repository. The workflow should now execute the Gradle build, generate the JAR file, and upload it as an artifact named `VCore.jar`." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1701115937179" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEventHandler.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEventHandler.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" />
+                  <option value="$PROJECT_DIR$/gradlew.bat" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="d738de">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" />
+                </list>
+              </option>
+              <option name="id" value="d738de" />
+              <option name="initiateTms" value="1701115141516" />
+              <option name="request" value="&#10;0s&#10;Run ./gradlew jar&#10;/home/runner/work/_temp/49211975-9632-46f9-801a-a039e683ed41.sh: line 1: ./gradlew: Permission denied&#10;Error: Process completed with exit code 126." />
+              <option name="response" value="" />
+              <option name="responseDescription" value="The error message indicates that the permission to execute the `gradlew` script is denied. To fix this issue, you need to give execute permission to the `gradlew` script.&#10;&#10;You can use the following command to give execute permission to the `gradlew` script:&#10;&#10;```shell&#10;chmod +x gradlew&#10;```&#10;&#10;After running this command, try running `./gradlew jar` again. It should now have the necessary permissions to execute the script." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1701115145899" />
+              <option name="usedIndexedFilePaths">
+                <list>
+                  <option value="D:\Projects\Java\VEGA-Core\gradlew.bat" />
+                  <option value="D:\Projects\Java\VEGA-Core\gradle\wrapper\gradle-wrapper.properties" />
+                </list>
+              </option>
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="fe3d5b">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                </list>
+              </option>
+              <option name="id" value="fe3d5b" />
+              <option name="initiateTms" value="1701116138402" />
+              <option name="request" value="BUILD SUCCESSFUL in 17s&#10;3 actionable tasks: 3 executed&#10;mv: cannot move 'build/libs/VEGA-Core-1.20.1-ALPHA-4f6a40f.jar' to 'vega-network-main/VEGA-Core-4f6a40ff44f80f90df428f70381aa3c64cc490a2.jar': No such file or directory&#10;Error: Process completed with exit code 1.&#10;" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="The error message indicates that the destination directory for moving the JAR file does not exist. To fix this issue, you need to create the destination directory before moving the JAR file.&#10;&#10;Here's the updated `Execute Gradle jar` step in the GitHub workflow file:&#10;&#10;```yaml&#10;- name: Execute Gradle jar&#10;  run: |&#10;    jarFileName=&quot;${{ github.repository }}-${{ github.sha }}.jar&quot;&#10;    ./gradlew jar --no-daemon&#10;    mkdir -p vega-network-main&#10;    mv build/libs/*.jar vega-network-main/$jarFileName&#10;    echo &quot;::set-output name=jarFileName::vega-network-main/$jarFileName&quot;&#10;```&#10;&#10;In this updated version, I added the `mkdir -p vega-network-main` command before moving the JAR file. This command creates the `vega-network-main` directory if it doesn't exist.&#10;&#10;Save the updated file and commit it to your repository. The workflow should now execute the Gradle build, generate the JAR file with the dynamic filename, create the destination directory, and move the JAR file to the correct location before uploading it as an artifact." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1701116145030" />
+              <option name="usedIndexedFilePaths">
+                <list>
+                  <option value="D:\Projects\Java\VEGA-Core\settings.gradle" />
+                </list>
+              </option>
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
                 </list>
               </option>
             </ChatHistoryModel>

@@ -25,10 +25,6 @@ jar {
     }
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
-
 def getBranchHash() {
     def branchHash = "git rev-parse --short HEAD".execute().text.trim()
     return branchHash
@@ -36,16 +32,10 @@ def getBranchHash() {
 
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.28'
-    testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation "dev.dejvokep:boosted-yaml:1.3"
     implementation 'com.github.hollow-cube:minestom-ce:9e2a200243'
     implementation 'org.slf4j:slf4j-log4j12:2.0.7'
     implementation 'org.apache.logging.log4j:log4j-api:2.22.0'
     implementation 'org.apache.logging.log4j:log4j-core:2.22.0'
-}
-
-test {
-    useJUnitPlatform()
 }
 
