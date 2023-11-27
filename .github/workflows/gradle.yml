@@ -33,13 +33,9 @@ jobs:
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
     - name: Execute Gradle jar
-      run: |
-        jarFileName="${{ github.repository }}-${{ github.sha }}.jar"
-        ./gradlew jar --no-daemon
-        mv build/libs/*.jar $jarFileName
-        echo "::set-output name=jarFileName::$jarFileName"
+      run: ./gradlew build
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ needs.build.outputs.jarFileName }}
-        path: ${{ needs.build.outputs.jarFileName }}
+        name: "VEGA Core compiled jar"
+        path: "build/libs/VEGA-Core*.jar"
