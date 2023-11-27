@@ -34,3 +34,8 @@ jobs:
       uses: gradle/gradle-build-action@v2
     - name: Execute Gradle jar
       run: ./gradlew jar
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: VCore.jar
+        path: $0
