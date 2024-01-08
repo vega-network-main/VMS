@@ -5,13 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f84e6de-3f7e-4aec-98e2-ab7f801fe038" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/world/generation/EndGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/world/generation/NetherGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/world/generation/OverworldGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/server-config.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tinylog.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigsInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigsInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/server-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/server-config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,14 +83,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java/MCP-Reborn-1.19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java/VMCS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;D:/Projects/Java/VEGA-Core/src/main/java/org/veganetwork/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -134,7 +149,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--scan" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -228,12 +243,29 @@
       <workItem from="1701074593017" duration="4193000" />
       <workItem from="1701079967722" duration="1305000" />
       <workItem from="1701089491317" duration="4848000" />
-      <workItem from="1701104393544" duration="11504000" />
+      <workItem from="1701104393544" duration="11639000" />
+      <workItem from="1701466481679" duration="30000" />
+      <workItem from="1701466775803" duration="433000" />
+      <workItem from="1701540216948" duration="16000" />
+      <workItem from="1701621740048" duration="13000" />
+      <workItem from="1701860763353" duration="31000" />
+      <workItem from="1702921823814" duration="4434000" />
+      <workItem from="1703359251008" duration="2735000" />
+      <workItem from="1703689933059" duration="2045000" />
+      <workItem from="1704646320841" duration="600000" />
+      <workItem from="1704744556469" duration="48000" />
+      <workItem from="1704744749022" duration="8326000" />
+      <workItem from="1704753397215" duration="72000" />
+      <workItem from="1704753560184" duration="104000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:net.kyori:adventure-api" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -341,6 +373,32 @@
                   <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" />
                   <option value="$PROJECT_DIR$/gradlew.bat" />
                   <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="bab0c2">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/resources/tinylog.properties" />
+                </list>
+              </option>
+              <option name="id" value="bab0c2" />
+              <option name="initiateTms" value="1702926976185" />
+              <option name="request" value="log4j:WARN No appenders could be found for logger (net.minestom.server.MinecraftServer).&#10;log4j:WARN Please initialize the log4j system properly.&#10;log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.&#10;&#10;&#10;how to use tinylog" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="To use Tinylog as your logging framework, you need to follow these steps:&#10;&#10;1. Add the Tinylog dependency to your `build.gradle` file:&#10;&#10;```gradle&#10;dependencies {&#10;    implementation 'org.tinylog:tinylog-api:2.2.1'&#10;    implementation 'org.tinylog:tinylog-impl:2.2.1'&#10;}&#10;```&#10;&#10;2. Create a `tinylog.properties` file in the `src/main/resources` directory with the desired configuration. Here's an example configuration:&#10;&#10;```properties&#10;writer = console&#10;writer.format = [{date}] [{level}] {class}.{method}() - {message}&#10;```&#10;&#10;This configuration sets up a console writer and specifies the log message format.&#10;&#10;3. Replace the existing logging framework with Tinylog in your code. For example, if you have a line like this:&#10;&#10;```java&#10;import org.apache.logging.log4j.LogManager;&#10;import org.apache.logging.log4j.Logger;&#10;&#10;private static final Logger logger = LogManager.getLogger(YourClass.class);&#10;```&#10;&#10;Replace it with:&#10;&#10;```java&#10;import org.tinylog.Logger;&#10;&#10;private static final Logger logger = Logger.getLogger(YourClass.class);&#10;```&#10;&#10;4. Use the Tinylog logger to log messages in your code. For example:&#10;&#10;```java&#10;logger.info(&quot;This is an info message&quot;);&#10;logger.error(&quot;This is an error message&quot;);&#10;```&#10;&#10;5. Build and run your application. Tinylog will use the configuration from the `tinylog.properties` file and start logging messages according to the specified format.&#10;&#10;Make sure to remove any existing log4j configuration files or dependencies to avoid conflicts with Tinylog.&#10;&#10;Note: Tinylog is a lightweight logging framework, and its configuration is simpler compared to log4j. If you prefer to continue using log4j, you need to provide a proper log4j configuration file to resolve the warning you mentioned." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1702926981771" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/resources/tinylog.properties" />
                 </list>
               </option>
             </ChatHistoryModel>

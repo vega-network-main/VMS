@@ -2,13 +2,11 @@ package org.veganetwork.configs;
 
 import dev.dejvokep.boostedyaml.YamlDocument;
 import lombok.Getter;
+import net.minestom.server.MinecraftServer;
 
 import java.io.File;
 import java.nio.file.Path;
 import java.util.Objects;
-
-import static org.veganetwork.Main.logger;
-
 
 public class ConfigsInit {
     @Getter
@@ -38,7 +36,7 @@ public class ConfigsInit {
             }
 
         } catch (Exception e) {
-            logger.error(String.valueOf(e));
+            MinecraftServer.LOGGER.error(String.valueOf(e));
         }
     }
     public void InitAll() {

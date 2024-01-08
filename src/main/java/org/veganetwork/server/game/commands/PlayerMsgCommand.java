@@ -24,9 +24,9 @@ public class PlayerMsgCommand extends Command {
 
             if (player != null) {
                 player.sendMessage(sender, Component.text(playerMsg));
-                sender.sendMessage(String.format("You sent a message to %s", playerName));
+                sender.sendMessage(String.format("You sent a message to %s.", playerName));
             } else {
-                sender.sendMessage(String.format("Player %s was not found", playerName));
+                sender.sendMessage(String.format("Player %s was not found.", playerName));
             }
         }, playerArgument, playerMessage);
     }
