@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f84e6de-3f7e-4aec-98e2-ab7f801fe038" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/world/generation/EndGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/world/generation/NetherGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/world/generation/OverworldGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/server-config.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tinylog.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigsInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigsInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/server-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/server-config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +237,8 @@
       <workItem from="1704744556469" duration="48000" />
       <workItem from="1704744749022" duration="8326000" />
       <workItem from="1704753397215" duration="72000" />
-      <workItem from="1704753560184" duration="104000" />
+      <workItem from="1704753560184" duration="292000" />
+      <workItem from="1704753879506" duration="232000" />
     </task>
     <servers />
   </component>
