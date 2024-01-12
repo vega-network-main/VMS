@@ -12,7 +12,7 @@ network_compression: 256
 
 # mojang - Online mode, velocity - Velocity, offline - LAN mode
 server_mode: offline
-velicity_secret: ""
+velocity_secret: ""
 # Whitelist (based on nicknames) -
 whitelist: false
 max_players: 25
