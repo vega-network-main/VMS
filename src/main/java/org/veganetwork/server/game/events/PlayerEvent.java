@@ -31,8 +31,7 @@ public class PlayerEvent {
             MinecraftServer.LOGGER.info("%p has left the server".replace("%p", player.getUsername()));
         });
         gEventHandler.addListener(PlayerBlockBreakEvent.class, event -> {
-            if (event.getPlayer().getGameMode() == GameMode.CREATIVE) {
-            } else {
+            if (event.getPlayer().getGameMode() != GameMode.CREATIVE) {
                 Block block = event.getBlock();
                 Material block_item = Material.fromNamespaceId(block.namespace());
                 spawnItemStack(block_item, Pos.fromPoint(event.getBlockPosition()), iContainer, false);
