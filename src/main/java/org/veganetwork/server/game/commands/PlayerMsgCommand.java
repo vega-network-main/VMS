@@ -6,7 +6,6 @@ import net.minestom.server.command.builder.arguments.ArgumentType;
 import net.minestom.server.entity.Player;
 import org.veganetwork.server.game.utilitaires.PlayerUtility;
 
-
 public class PlayerMsgCommand extends Command {
     public PlayerMsgCommand() {
         super("tell", "msg");

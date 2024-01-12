@@ -11,7 +11,7 @@ network_compression: 256
 # Online mode, whitelist, max_players
 
 # mojang - Online mode, velocity - Velocity, offline - LAN mode
-server_mode: mojang
+server_mode: offline
 velicity_secret: ""
 # Whitelist (based on nicknames) -
 whitelist: false
@@ -19,7 +19,7 @@ max_players: 25
 
 # Other
 
-brand_name: "VMCS"
+brand_name: "VMS"
 #spawn-protection=0
 #view-distance=10
 #simulation-distance=10

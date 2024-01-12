@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f84e6de-3f7e-4aec-98e2-ab7f801fe038" name="Changes" comment="">
+    <list default="true" id="37de4d1f-882c-402e-bd5d-d6a48896f09b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/GameEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/BlockFacing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/server-config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/server-config.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/server-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/server-config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +52,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -48,12 +63,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2YXJdVyG6pyXyB7wgOGwaB898uO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2am6Ma2J4E09EZRZhAGHh13IUCN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,73 +77,22 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java/VMCS&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java/untitled&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Projects/Java/VEGA-Core/src/main/java/org/veganetwork/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets.color&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\Java\VEGA-Core" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Gradle.VEGA-Core [build]">
-    <configuration name="VEGA-Core [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager">
+    <configuration name="VMS [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="assemble" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="VEGA-Core [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--scan" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="VEGA-Core [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -147,299 +109,207 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="VEGA-Core [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="VEGA-Core [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--stacktrace" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.VEGA-Core [build]" />
-        <item itemvalue="Gradle.VEGA-Core [clean]" />
-        <item itemvalue="Gradle.VEGA-Core [jar]" />
-        <item itemvalue="Gradle.VEGA-Core [buildDependents]" />
-        <item itemvalue="Gradle.VEGA-Core [assemble]" />
+        <item itemvalue="Gradle.VMS [build]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5f84e6de-3f7e-4aec-98e2-ab7f801fe038" name="Changes" comment="" />
-      <created>1700666078581</created>
+      <changelist id="37de4d1f-882c-402e-bd5d-d6a48896f09b" name="Changes" comment="" />
+      <created>1704911361263</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1700666078581</updated>
-      <workItem from="1700666079614" duration="3833000" />
-      <workItem from="1700674773458" duration="7827000" />
-      <workItem from="1700732338049" duration="9037000" />
-      <workItem from="1700842357036" duration="2389000" />
-      <workItem from="1700845670069" duration="1423000" />
-      <workItem from="1700849830197" duration="202000" />
-      <workItem from="1700850087539" duration="10640000" />
-      <workItem from="1700994945771" duration="2001000" />
-      <workItem from="1701025023401" duration="9000" />
-      <workItem from="1701030299609" duration="3410000" />
-      <workItem from="1701034140629" duration="309000" />
-      <workItem from="1701073823902" duration="757000" />
-      <workItem from="1701074593017" duration="4193000" />
-      <workItem from="1701079967722" duration="1305000" />
-      <workItem from="1701089491317" duration="4848000" />
-      <workItem from="1701104393544" duration="11639000" />
-      <workItem from="1701466481679" duration="30000" />
-      <workItem from="1701466775803" duration="433000" />
-      <workItem from="1701540216948" duration="16000" />
-      <workItem from="1701621740048" duration="13000" />
-      <workItem from="1701860763353" duration="31000" />
-      <workItem from="1702921823814" duration="4434000" />
-      <workItem from="1703359251008" duration="2735000" />
-      <workItem from="1703689933059" duration="2045000" />
-      <workItem from="1704646320841" duration="600000" />
-      <workItem from="1704744556469" duration="48000" />
-      <workItem from="1704744749022" duration="8326000" />
-      <workItem from="1704753397215" duration="72000" />
-      <workItem from="1704753560184" duration="292000" />
-      <workItem from="1704753879506" duration="232000" />
+      <updated>1704911361263</updated>
+      <workItem from="1704911363666" duration="16115000" />
+      <workItem from="1704977225255" duration="1192000" />
+      <workItem from="1705066872565" duration="783000" />
+      <workItem from="1705072593358" duration="3464000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="java:net.kyori:adventure-api" />
-    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
       <map>
-        <entry key="65d101">
+        <entry key="03bb55">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
-                </list>
-              </option>
-              <option name="id" value="65d101" />
-              <option name="initiateTms" value="1701101851112" />
-              <option name="request" value="[18:16:25 INFO] [Ms-Tick-0]: true&#10;[18:16:25 INFO] [Ms-Tick-0]: returned&#10;[18:16:25 INFO] [Ms-Tick-0]: false&#10;[18:16:25 INFO] [Ms-Tick-0]: nullvovamod&#10;[18:16:25 ERROR] [Ms-Tick-0]: An exception was encountered while executing command: gm CREATIVE vovamod&#10;java.lang.NullPointerException: Cannot invoke &quot;net.minestom.server.entity.Player.setGameMode(net.minestom.server.entity.GameMode)&quot; because &quot;player&quot; is null&#10;        at org.veganetwork.server.game.commands.GamemodeCommand.lambda$new$1(GamemodeCommand.java:29)&#10;        at net.minestom.server.command.CommandParserImpl$ValidExecutableCmd.execute(CommandParserImpl.java:315)&#10;        at net.minestom.server.command.CommandManager.lambda$execute$0(CommandManager.java:118)&#10;        at net.minestom.server.command.CommandManager.execute(CommandManager.java:148)&#10;        at net.minestom.server.listener.ChatMessageListener.commandChatListener(ChatMessageListener.java:28)&#10;        at net.minestom.server.listener.manager.PacketListenerManager.processClientPacket(PacketListenerManager.java:90)&#10;        at net.minestom.server.entity.Player.lambda$interpretPacketQueue$18(Player.java:1879)&#10;        at org.jctools.queues.MpscUnboundedXaddArrayQueue.drain(MpscUnboundedXaddArrayQueue.java:312)&#10;        at net.minestom.server.entity.Player.interpretPacketQueue(Player.java:1879)&#10;        at net.minestom.server.entity.Player.update(Player.java:380)&#10;        at net.minestom.server.entity.Entity.tick(Entity.java:562)&#10;        at net.minestom.server.thread.TickThread.tick(TickThread.java:74)&#10;        at net.minestom.server.thread.TickThread.run(TickThread.java:49)" />
-              <option name="response" value="" />
-              <option name="responseDescription" value="Based on the error message, it seems that there is a `NullPointerException` in the `GamemodeCommand` class at line 29. The error occurs because the `player` object is null when trying to invoke the `setGameMode` method.&#10;&#10;To fix this issue, you need to make sure that the `player` object is not null before calling the `setGameMode` method. Here's the updated code for the `GamemodeCommand` class:&#10;&#10;```java&#10;public class GamemodeCommand extends Command {&#10;    public GamemodeCommand() {&#10;        super(&quot;gamemode&quot;, &quot;gm&quot;);&#10;        setDefaultExecutor(((sender, context) -&gt;&#10;                sender.sendMessage(&quot;Usage: /gamemode &lt;type&gt; &lt;target&gt;&quot;))&#10;        );&#10;&#10;        var gamemodeType = ArgumentType.String(&quot;gm_type&quot;);&#10;        var playerArgument = ArgumentType.String(&quot;player_id&quot;);&#10;&#10;        addSyntax((sender, context) -&gt; {&#10;            String gamemode = context.get(gamemodeType);&#10;            String playerName = context.get(playerArgument);&#10;            Player player = PlayerUtility.findPlayer(playerName);&#10;            if (player != null) {&#10;                player.setGameMode(GameMode.valueOf(gamemode));&#10;                sender.sendMessage(String.format(&quot;Player %s has changed their gamemode to %s&quot;, playerName, gamemode));&#10;            } else {&#10;                sender.sendMessage(String.format(&quot;Player %s not found.&quot;, playerName));&#10;            }&#10;        }, gamemodeType, playerArgument);&#10;    }&#10;}&#10;```&#10;&#10;In this updated code, I've added a null check for the `player` object before calling the `setGameMode` method. If the `player` object is null, it will send a message indicating that the player was not found.&#10;&#10;Please replace the existing code in the `GamemodeCommand.java` file with this updated code." />
-              <option name="responseFileName" value="" />
-              <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1701101858797" />
-              <option name="usedIndexedFilePaths">
-                <list>
-                  <option value="D:\Projects\Java\VEGA-Core\src\main\java\org\veganetwork\server\game\events\PlayerEventHandler.java" />
-                </list>
-              </option>
-              <option name="usedLocalFilePaths">
-                <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
-                </list>
-              </option>
-            </ChatHistoryModel>
-          </value>
-        </entry>
-        <entry key="8ce5f7">
-          <value>
-            <ChatHistoryModel>
-              <option name="contextFilesPaths">
-                <list>
-                  <option value="$PROJECT_DIR$/build.gradle" />
-                </list>
-              </option>
-              <option name="id" value="8ce5f7" />
-              <option name="initiateTms" value="1701116011105" />
-              <option name="request" value="what if my build.gradle always changes filename (when commits)&#10;&#10;plugins {&#10;    id 'java'&#10;}&#10;&#10;java {&#10;    sourceCompatibility = JavaVersion.VERSION_17&#10;}&#10;&#10;group = 'org.veganetwork'&#10;version = '1.20.1-ALPHA'&#10;&#10;repositories {&#10;    mavenCentral()&#10;    maven { url 'https://jitpack.io' }&#10;}&#10;&#10;jar {&#10;    duplicatesStrategy = 'exclude'&#10;    archiveFileName = &quot;${rootProject.name}-${version}-&quot; + getBranchHash() + &quot;.jar&quot;&#10;    manifest {&#10;        attributes 'Main-Class' : 'org.veganetwork.Main'&#10;    }&#10;    from {&#10;        configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it)}&#10;    }&#10;}&#10;&#10;&#10;" />
-              <option name="response" value="" />
-              <option name="responseDescription" value="If the filename of your JAR file changes dynamically based on the branch hash, you can modify the GitHub workflow file to capture the generated filename and use it when uploading the artifact.&#10;&#10;Here's an updated version of the GitHub workflow file:&#10;&#10;```yaml&#10;name: Build JAR&#10;&#10;on:&#10;  push:&#10;    branches: [ &quot;master&quot; ]&#10;  pull_request:&#10;    branches: [ &quot;master&quot; ]&#10;&#10;permissions:&#10;  contents: write&#10;  pull-requests: write &#10;  issues: read&#10;&#10;jobs:&#10;  build:&#10;&#10;    runs-on: ubuntu-latest&#10;&#10;    steps:&#10;    - uses: actions/checkout@v3&#10;    - name: Set up JDK 17&#10;      uses: actions/setup-java@v3&#10;      with:&#10;        java-version: '17'&#10;        distribution: 'temurin'&#10;    - name: Setup Gradle&#10;      uses: gradle/gradle-build-action@v2&#10;    - name: Execute Gradle jar&#10;      run: |&#10;        jarFileName=&quot;${{ github.repository }}-${{ github.sha }}.jar&quot;&#10;        ./gradlew jar --no-daemon&#10;        mv build/libs/*.jar $jarFileName&#10;        echo &quot;::set-output name=jarFileName::$jarFileName&quot;&#10;    - name: Upload artifact&#10;      uses: actions/upload-artifact@v3&#10;      with:&#10;        name: ${{ needs.build.outputs.jarFileName }}&#10;        path: ${{ needs.build.outputs.jarFileName }}&#10;```&#10;&#10;In this updated file, the `archiveFileName` in the `jar` task of your `build.gradle` file remains the same. However, after running the `./gradlew jar` command, we capture the generated JAR filename by combining the repository name and the commit SHA. We then move the JAR file to the captured filename.&#10;&#10;The captured filename is stored as an output variable `jarFileName` using the `::set-output` command. This output variable is then used in the `actions/upload-artifact` step to specify the name and path of the uploaded artifact.&#10;&#10;Save the updated file and commit it to your repository. The workflow should now execute the Gradle build, generate the JAR file with the dynamic filename, and upload it as an artifact with the correct filename." />
-              <option name="responseFileName" value="" />
-              <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1701116018287" />
-              <option name="usedLocalFilePaths">
-                <list>
-                  <option value="$PROJECT_DIR$/build.gradle" />
-                </list>
-              </option>
-            </ChatHistoryModel>
-          </value>
-        </entry>
-        <entry key="a10644">
-          <value>
-            <ChatHistoryModel>
-              <option name="contextFilesPaths">
-                <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" />
-                  <option value="$PROJECT_DIR$/gradlew.bat" />
-                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
                   <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
                   <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
-                </list>
-              </option>
-              <option name="id" value="a10644" />
-              <option name="initiateTms" value="1701115929458" />
-              <option name="request" value="No files were found with the provided path: $0. No artifacts will be uploaded.&#10;&#10;&#10;name: Build JAR&#10;&#10;on:&#10;  push:&#10;    branches: [ &quot;master&quot; ]&#10;  pull_request:&#10;    branches: [ &quot;master&quot; ]&#10;&#10;permissions:&#10;  contents: write&#10;  pull-requests: write &#10;  issues: read&#10;&#10;jobs:&#10;  build:&#10;&#10;    runs-on: ubuntu-latest&#10;&#10;    steps:&#10;    - uses: actions/checkout@v3&#10;    - name: Set up JDK 17&#10;      uses: actions/setup-java@v3&#10;      with:&#10;        java-version: '17'&#10;        distribution: 'temurin'&#10;    - name: Setup Gradle&#10;      uses: gradle/gradle-build-action@v2&#10;    - name: Execute Gradle jar&#10;      run: ./gradlew jar&#10;    - name: Upload artifact&#10;      uses: actions/upload-artifact@v3&#10;      with:&#10;        name: VCore.jar&#10;        path: $0&#10;&#10;&#10;Fix github workflow file" />
-              <option name="response" value="" />
-              <option name="responseDescription" value="To fix the GitHub workflow file, you need to update the `path` value in the `actions/upload-artifact` step. The `$0` placeholder is not a valid path. You should provide the actual path to the JAR file that you want to upload as an artifact.&#10;&#10;Here's the updated GitHub workflow file:&#10;&#10;```yaml&#10;name: Build JAR&#10;&#10;on:&#10;  push:&#10;    branches: [ &quot;master&quot; ]&#10;  pull_request:&#10;    branches: [ &quot;master&quot; ]&#10;&#10;permissions:&#10;  contents: write&#10;  pull-requests: write &#10;  issues: read&#10;&#10;jobs:&#10;  build:&#10;&#10;    runs-on: ubuntu-latest&#10;&#10;    steps:&#10;    - uses: actions/checkout@v3&#10;    - name: Set up JDK 17&#10;      uses: actions/setup-java@v3&#10;      with:&#10;        java-version: '17'&#10;        distribution: 'temurin'&#10;    - name: Setup Gradle&#10;      uses: gradle/gradle-build-action@v2&#10;    - name: Execute Gradle jar&#10;      run: ./gradlew jar&#10;    - name: Upload artifact&#10;      uses: actions/upload-artifact@v3&#10;      with:&#10;        name: VCore.jar&#10;        path: build/libs/VCore.jar&#10;```&#10;&#10;In this updated file, I assumed that the JAR file is generated in the `build/libs` directory with the name `VCore.jar`. Adjust the `path` value accordingly if the JAR file is located in a different directory or has a different name.&#10;&#10;Save the updated file and commit it to your repository. The workflow should now execute the Gradle build, generate the JAR file, and upload it as an artifact named `VCore.jar`." />
-              <option name="responseFileName" value="" />
-              <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1701115937179" />
-              <option name="usedLocalFilePaths">
-                <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEventHandler.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEventHandler.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
-                  <option value="$PROJECT_DIR$/build.gradle" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" />
-                  <option value="$PROJECT_DIR$/gradlew.bat" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
                   <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
+                </list>
+              </option>
+              <option name="id" value="03bb55" />
+              <option name="initiateTms" value="1704914134199" />
+              <option name="request" value="Make a change in setGenerator so that world has light level of 12F" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="To modify the `setGenerator` method in the `RunServer` class to set the light level of the world to 12F, you can update the existing code as follows:&#10;&#10;```java&#10;instanceContainer.setGenerator(unit -&gt; {&#10;    unit.modifier().fillHeight(0, 40, Block.DIRT);&#10;    unit.modifier().fillHeight(40, 41, Block.GRASS_BLOCK);&#10;    unit.modifier().setLightLevel(12F); // Set the light level to 12F&#10;});&#10;```&#10;&#10;This code sets the light level of the world by using the `setLightLevel` method of the `UnitModifier` class. The value `12F` represents the desired light level.&#10;&#10;Make sure to import the necessary classes:&#10;&#10;```java&#10;import net.minestom.server.instance.generator.UnitModifier;&#10;```&#10;&#10;Let me know if you need any further assistance!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1704914138409" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEvent.java" />
                 </list>
               </option>
             </ChatHistoryModel>
           </value>
         </entry>
-        <entry key="bab0c2">
+        <entry key="221e84">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/build.gradle" />
-                  <option value="$PROJECT_DIR$/src/main/resources/tinylog.properties" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
                 </list>
               </option>
-              <option name="id" value="bab0c2" />
-              <option name="initiateTms" value="1702926976185" />
-              <option name="request" value="log4j:WARN No appenders could be found for logger (net.minestom.server.MinecraftServer).&#10;log4j:WARN Please initialize the log4j system properly.&#10;log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.&#10;&#10;&#10;how to use tinylog" />
+              <option name="id" value="221e84" />
+              <option name="initiateTms" value="1704914583640" />
+              <option name="request" value="nope" />
               <option name="response" value="" />
-              <option name="responseDescription" value="To use Tinylog as your logging framework, you need to follow these steps:&#10;&#10;1. Add the Tinylog dependency to your `build.gradle` file:&#10;&#10;```gradle&#10;dependencies {&#10;    implementation 'org.tinylog:tinylog-api:2.2.1'&#10;    implementation 'org.tinylog:tinylog-impl:2.2.1'&#10;}&#10;```&#10;&#10;2. Create a `tinylog.properties` file in the `src/main/resources` directory with the desired configuration. Here's an example configuration:&#10;&#10;```properties&#10;writer = console&#10;writer.format = [{date}] [{level}] {class}.{method}() - {message}&#10;```&#10;&#10;This configuration sets up a console writer and specifies the log message format.&#10;&#10;3. Replace the existing logging framework with Tinylog in your code. For example, if you have a line like this:&#10;&#10;```java&#10;import org.apache.logging.log4j.LogManager;&#10;import org.apache.logging.log4j.Logger;&#10;&#10;private static final Logger logger = LogManager.getLogger(YourClass.class);&#10;```&#10;&#10;Replace it with:&#10;&#10;```java&#10;import org.tinylog.Logger;&#10;&#10;private static final Logger logger = Logger.getLogger(YourClass.class);&#10;```&#10;&#10;4. Use the Tinylog logger to log messages in your code. For example:&#10;&#10;```java&#10;logger.info(&quot;This is an info message&quot;);&#10;logger.error(&quot;This is an error message&quot;);&#10;```&#10;&#10;5. Build and run your application. Tinylog will use the configuration from the `tinylog.properties` file and start logging messages according to the specified format.&#10;&#10;Make sure to remove any existing log4j configuration files or dependencies to avoid conflicts with Tinylog.&#10;&#10;Note: Tinylog is a lightweight logging framework, and its configuration is simpler compared to log4j. If you prefer to continue using log4j, you need to provide a proper log4j configuration file to resolve the warning you mentioned." />
+              <option name="responseDescription" value="I apologize for the confusion. If there is no direct method to set the light level using the `UnitModifier` class in Minestom, you can try using the `setBlock` method to manually set the light level of each block.&#10;&#10;Here's an updated version of the `setGenerator` method that sets the light level of the world to 12F:&#10;&#10;```java&#10;instanceContainer.setGenerator(unit -&gt; {&#10;    unit.modifier().fillHeight(0, 40, Block.DIRT);&#10;    unit.modifier().fillHeight(40, 41, Block.GRASS_BLOCK);&#10;&#10;    for (int x = 0; x &lt; unit.getChunkSizeX(); x++) {&#10;        for (int y = 0; y &lt; unit.getChunkSizeY(); y++) {&#10;            for (int z = 0; z &lt; unit.getChunkSizeZ(); z++) {&#10;                unit.setBlock(x, y, z, Block.AIR);&#10;                unit.setSkyLight(x, y, z, 12);&#10;                unit.setBlockLight(x, y, z, 12);&#10;            }&#10;        }&#10;    }&#10;});&#10;```&#10;&#10;In this code, after filling the height with dirt and grass blocks, we iterate over each block in the chunk and set it to `Block.AIR` to remove any existing blocks. Then, we set the sky light and block light of each block to 12 to achieve the desired light level.&#10;&#10;Make sure to import the necessary classes:&#10;&#10;```java&#10;import net.minestom.server.instance.block.Block;&#10;```&#10;&#10;I apologize for any inconvenience caused. Let me know if you have any further questions!" />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1702926981771" />
+              <option name="responseTms" value="1704914588443" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/build.gradle" />
-                  <option value="$PROJECT_DIR$/src/main/resources/tinylog.properties" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEvent.java" />
                 </list>
               </option>
             </ChatHistoryModel>
           </value>
         </entry>
-        <entry key="d738de">
+        <entry key="535fa2">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
                 </list>
               </option>
-              <option name="id" value="d738de" />
-              <option name="initiateTms" value="1701115141516" />
-              <option name="request" value="&#10;0s&#10;Run ./gradlew jar&#10;/home/runner/work/_temp/49211975-9632-46f9-801a-a039e683ed41.sh: line 1: ./gradlew: Permission denied&#10;Error: Process completed with exit code 126." />
+              <option name="id" value="535fa2" />
+              <option name="initiateTms" value="1704914154671" />
+              <option name="request" value="there is no setLightLevel" />
               <option name="response" value="" />
-              <option name="responseDescription" value="The error message indicates that the permission to execute the `gradlew` script is denied. To fix this issue, you need to give execute permission to the `gradlew` script.&#10;&#10;You can use the following command to give execute permission to the `gradlew` script:&#10;&#10;```shell&#10;chmod +x gradlew&#10;```&#10;&#10;After running this command, try running `./gradlew jar` again. It should now have the necessary permissions to execute the script." />
+              <option name="responseDescription" value="I apologize for the confusion. It seems that there is no direct method to set the light level using the `UnitModifier` class in Minestom. However, you can achieve the desired result by using a custom generator.&#10;&#10;Here's an updated version of the `setGenerator` method that sets the light level of the world to 12F:&#10;&#10;```java&#10;instanceContainer.setGenerator(unit -&gt; {&#10;    unit.setBlockModifier((x, y, z, block) -&gt; {&#10;        if (y &lt; 40) {&#10;            return Block.DIRT;&#10;        } else if (y == 40) {&#10;            return Block.GRASS_BLOCK;&#10;        } else {&#10;            return Block.AIR;&#10;        }&#10;    });&#10;&#10;    unit.setLightModifier((x, y, z, light) -&gt; {&#10;        if (y &lt; 40) {&#10;            return 0;&#10;        } else if (y == 40) {&#10;            return 12;&#10;        } else {&#10;            return 15;&#10;        }&#10;    });&#10;});&#10;```&#10;&#10;In this code, the `setBlockModifier` method is used to set the block types for each coordinate. Blocks below y=40 are set to `Block.DIRT`, y=40 is set to `Block.GRASS_BLOCK`, and blocks above y=40 are set to `Block.AIR`.&#10;&#10;The `setLightModifier` method is used to set the light level for each coordinate. Light levels below y=40 are set to 0, y=40 is set to 12, and light levels above y=40 are set to 15.&#10;&#10;Make sure to import the necessary classes:&#10;&#10;```java&#10;import net.minestom.server.instance.block.Block;&#10;```&#10;&#10;I apologize for any inconvenience caused. Let me know if you have any further questions!" />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1701115145899" />
-              <option name="usedIndexedFilePaths">
-                <list>
-                  <option value="D:\Projects\Java\VEGA-Core\gradlew.bat" />
-                  <option value="D:\Projects\Java\VEGA-Core\gradle\wrapper\gradle-wrapper.properties" />
-                </list>
-              </option>
+              <option name="responseTms" value="1704914161067" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/ServerStarter.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEvent.java" />
                 </list>
               </option>
             </ChatHistoryModel>
           </value>
         </entry>
-        <entry key="fe3d5b">
+        <entry key="c533d6">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
                 </list>
               </option>
-              <option name="id" value="fe3d5b" />
-              <option name="initiateTms" value="1701116138402" />
-              <option name="request" value="BUILD SUCCESSFUL in 17s&#10;3 actionable tasks: 3 executed&#10;mv: cannot move 'build/libs/VEGA-Core-1.20.1-ALPHA-4f6a40f.jar' to 'vega-network-main/VEGA-Core-4f6a40ff44f80f90df428f70381aa3c64cc490a2.jar': No such file or directory&#10;Error: Process completed with exit code 1.&#10;" />
+              <option name="id" value="c533d6" />
+              <option name="initiateTms" value="1704912689409" />
+              <option name="request" value="make an ItemDropEvent using gEventHandler. So when a player drops object it will slightly drop forward from middle of the player to around 1 block distance" />
               <option name="response" value="" />
-              <option name="responseDescription" value="The error message indicates that the destination directory for moving the JAR file does not exist. To fix this issue, you need to create the destination directory before moving the JAR file.&#10;&#10;Here's the updated `Execute Gradle jar` step in the GitHub workflow file:&#10;&#10;```yaml&#10;- name: Execute Gradle jar&#10;  run: |&#10;    jarFileName=&quot;${{ github.repository }}-${{ github.sha }}.jar&quot;&#10;    ./gradlew jar --no-daemon&#10;    mkdir -p vega-network-main&#10;    mv build/libs/*.jar vega-network-main/$jarFileName&#10;    echo &quot;::set-output name=jarFileName::vega-network-main/$jarFileName&quot;&#10;```&#10;&#10;In this updated version, I added the `mkdir -p vega-network-main` command before moving the JAR file. This command creates the `vega-network-main` directory if it doesn't exist.&#10;&#10;Save the updated file and commit it to your repository. The workflow should now execute the Gradle build, generate the JAR file with the dynamic filename, create the destination directory, and move the JAR file to the correct location before uploading it as an artifact." />
+              <option name="responseDescription" value="To create an `ItemDropEvent` using `gEventHandler`, you can add the following code to the `PlayerEvent` class:&#10;&#10;```java&#10;gEventHandler.addListener(ItemDropEvent.class, event -&gt; {&#10;    Player player = event.getPlayer();&#10;    Pos playerPos = player.getPosition();&#10;    Pos dropPos = playerPos.add(player.getDirection().multiply(1)); // Move the drop position forward by 1 block&#10;&#10;    // Set the drop position slightly above the player's position&#10;    dropPos = dropPos.withY(dropPos.y() + 0.5);&#10;&#10;    // Spawn the dropped item at the calculated position&#10;    spawnItemStack(event.getItemStack(), dropPos, iContainer);&#10;});&#10;```&#10;&#10;This code listens for the `ItemDropEvent` and retrieves the player who dropped the item. It then calculates the drop position by adding the player's direction multiplied by 1 block to the player's position. The drop position is then adjusted slightly above the player's position to avoid the item being dropped inside the player. Finally, the `spawnItemStack` method is called to spawn the dropped item at the calculated position.&#10;&#10;Make sure to import the necessary classes and methods:&#10;&#10;```java&#10;import net.minestom.server.event.item.ItemDropEvent;&#10;import net.minestom.server.coordinate.Pos;&#10;import net.minestom.server.entity.Player;&#10;import static org.veganetwork.server.game.utilitaires.PlayerUtility.spawnItemStack;&#10;```&#10;&#10;Let me know if you need any further assistance!" />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1701116145030" />
-              <option name="usedIndexedFilePaths">
-                <list>
-                  <option value="D:\Projects\Java\VEGA-Core\settings.gradle" />
-                </list>
-              </option>
+              <option name="responseTms" value="1704912693174" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/build.gradle" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="db14a6">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
+                </list>
+              </option>
+              <option name="id" value="db14a6" />
+              <option name="initiateTms" value="1704919141399" />
+              <option name="request" value="gEventHandler.addListener(ItemDropEvent.class, event -&gt; {&#10;            Pos playerPos = event.getPlayer().getPosition();&#10;&#10;&#10;            Pos dropPos = new Pos(playerPos.x(),playerPos.y(),playerPos.z(),playerPos.yaw(),playerPos.pitch());&#10;&#10;&#10;&#10;            // Set the drop position slightly above the player's position&#10;            // Spawn the dropped item at the calculated position&#10;            spawnItemStack(event.getItemStack().material(), dropPos, iContainer);&#10;&#10;&#10;make it so it will drop item like it's moving from player to dropPos. also make dropPos to drop item to where players Pitch and Yaw are" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="To make the dropped item move from the player's position to the `dropPos` while considering the player's pitch and yaw, you can modify the code as follows:&#10;&#10;```java&#10;gEventHandler.addListener(ItemDropEvent.class, event -&gt; {&#10;    Player player = event.getPlayer();&#10;    Pos playerPos = player.getPosition();&#10;&#10;    double distance = 1.0; // Distance from player to dropPos&#10;    double pitch = Math.toRadians(player.getPosition().pitch());&#10;    double yaw = Math.toRadians(player.getPosition().yaw());&#10;&#10;    double offsetX = -Math.sin(yaw) * Math.cos(pitch) * distance;&#10;    double offsetY = -Math.sin(pitch) * distance;&#10;    double offsetZ = Math.cos(yaw) * Math.cos(pitch) * distance;&#10;&#10;    Pos dropPos = playerPos.add(offsetX, offsetY, offsetZ);&#10;&#10;    // Set the drop position slightly above the player's position&#10;    dropPos = dropPos.withY(dropPos.y() + 0.5);&#10;&#10;    // Spawn the dropped item at the calculated position&#10;    spawnItemStack(event.getItemStack().material(), dropPos, iContainer);&#10;});&#10;```&#10;&#10;In this code, we calculate the offset values (`offsetX`, `offsetY`, `offsetZ`) based on the player's pitch and yaw. These offset values determine the direction and distance from the player's position to the `dropPos`. We then add these offset values to the player's position to calculate the final `dropPos`.&#10;&#10;Make sure to import the necessary classes:&#10;&#10;```java&#10;import net.minestom.server.coordinate.Pos;&#10;import net.minestom.server.entity.Player;&#10;import static org.veganetwork.server.game.utilitaires.PlayerUtility.spawnItemStack;&#10;```&#10;&#10;I apologize for any confusion caused earlier. Let me know if you have any further questions!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1704919146138" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
                 </list>
               </option>
             </ChatHistoryModel>

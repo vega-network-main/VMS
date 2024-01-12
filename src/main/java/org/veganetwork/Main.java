@@ -15,11 +15,13 @@ public class Main {
     }
     public static void main(String[] args) {
         new ConfigsInit();
+        MinecraftServer.LOGGER.info("");
         MinecraftServer.LOGGER.info("-- DEBUG INFO  --");
         MinecraftServer.LOGGER.info("Java: " + Runtime.version());
         MinecraftServer.LOGGER.info("Supported protocol: %d (%s)".formatted(MinecraftServer.PROTOCOL_VERSION, MinecraftServer.VERSION_NAME));
         MinecraftServer.LOGGER.info("-- END DEBUG   --");
-        MinecraftServer.LOGGER.info("Initializing VMCS");
+        MinecraftServer.LOGGER.info("");
+        MinecraftServer.LOGGER.info("Initializing VCS");
         new RunServer().ServerStart();
     }
 }

@@ -23,6 +23,6 @@ public class ConfigServer {
         max_players = config.getInt(Route.from("max_players"));
         brand_name = config.getString(Route.from("brand_name"));
         velocity_secret = config.getString(Route.from("velocity_secret"));
-        server_mode = config.getString(Route.from("online_mode"));
+        server_mode = config.getString(Route.from("server_mode"));
     }
 }
