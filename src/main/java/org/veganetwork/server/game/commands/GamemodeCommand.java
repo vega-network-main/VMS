@@ -1,38 +1,68 @@
 package org.veganetwork.server.game.commands;
 
+import static java.lang.String.format;
+import static net.kyori.adventure.text.Component.translatable;
+
+import java.util.Arrays;
+import net.kyori.adventure.text.format.NamedTextColor;
 import net.minestom.server.command.builder.Command;
 import net.minestom.server.command.builder.arguments.ArgumentType;
+import net.minestom.server.entity.Entity;
+import net.minestom.server.entity.EntityType;
 import net.minestom.server.entity.GameMode;
 import net.minestom.server.entity.Player;
-import org.veganetwork.server.game.utilitaires.PlayerUtility;
+import net.minestom.server.utils.entity.EntityFinder;
 
 public class GamemodeCommand extends Command {
     public GamemodeCommand() {
         super("gamemode", "gm");
-        setDefaultExecutor(((sender, context) ->
-                sender.sendMessage("Usage: /gamemode <type> <target>"))
+
+        var gamemodeArgument = ArgumentType.Word("gamemode").from(
+            Arrays.stream(GameMode.values())
+                .map(gameMode -> gameMode.name().toLowerCase())
+                .toArray(String[]::new)
         );
 
-        var gamemodeType = ArgumentType.String("gamemode type");
-        var playerArgument = ArgumentType.String("player_id");
+        // TODO: 13.01.2024 Add callback if unknown gamemode (It doesn't work)
+
+        var entityArgument = ArgumentType.Entity("target");
+
+        setDefaultExecutor((sender, context) -> {
+                sender.sendMessage("Usage: /gamemode <gamemode> [<target>]");
+            }
+        );
 
         addSyntax((sender, context) -> {
-            String gamemode = context.get(gamemodeType);
-            String playerName = context.get(playerArgument);
+            String gamemode = context.get(gamemodeArgument);
+            EntityFinder entityFinder = context.get(entityArgument);
 
-            Player player = PlayerUtility.findPlayer(playerName);
-            if (player != null) {
-                try {
-                    GameMode gm = GameMode.valueOf(gamemode.toUpperCase());
-                    player.setGameMode(gm);
-                    sender.sendMessage(String.format("Player %s has changed his gamemode to %s", playerName, gamemode));
-                } catch (IllegalArgumentException iae) {
-                    sender.sendMessage("Invalid game mode provided");
-                }
+            if (entityFinder.find(null, sender instanceof Player ? (Entity) sender : null).stream()
+                .filter(e -> !e.getEntityType().equals(EntityType.PLAYER))
+                .count() > 0)
+            {
+                sender.sendMessage(translatable("argument.player.entities").color(NamedTextColor.RED));
             } else {
-                sender.sendMessage(String.format("No for player %s was changed to %s", playerName, gamemode));
+                if (entityFinder.find(null, sender instanceof Player ? (Entity) sender : null).size() == 0) {
+                    sender.sendMessage(translatable("argument.entity.notfound.player").color(NamedTextColor.RED));
+                } else {
+                    entityFinder.find(null, sender instanceof Player ? (Entity) sender : null).forEach(entity -> {
+                            GameMode gm = GameMode.valueOf(gamemode.toUpperCase());
+                            ((Player) entity).setGameMode(gm);
+                            sender.sendMessage(translatable("commands.gamemode.success.self").args(translatable(format("gameMode.%s", gamemode.toLowerCase()))));
+                        });
+                }
             }
-        },gamemodeType, playerArgument);
+        }, gamemodeArgument, entityArgument);
 
+        addSyntax(((sender, context) -> {
+            String gamemode = context.get(gamemodeArgument);
+            if (sender instanceof Player) {
+                GameMode gm = GameMode.valueOf(gamemode.toUpperCase());
+                ((Player) sender).setGameMode(gm);
+                sender.sendMessage(translatable("commands.gamemode.success.self").args(translatable(format("gameMode.%s", gamemode.toLowerCase()))));
+            } else {
+                sender.sendMessage(translatable("permissions.requires.player"));
+            }
+        }), gamemodeArgument);
     }
 }

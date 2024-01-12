@@ -49,6 +49,8 @@ public class PlayerEvent {
         gEventHandler.addListener(ItemDropEvent.class, event -> {
 
         });
+
+
         // requires NEW formula, x and z is broken
 //        gEventHandler.addListener(ItemDropEvent.class, event -> {
 //            Player player = event.getPlayer();
@@ -78,6 +80,6 @@ public class PlayerEvent {
 //            Player player = event.getPlayer();
 //            player.setGameMode(event.getNewGameMode());
 //        });
-        gEventHandler.addListener(PlayerCommandEvent.class, event -> MinecraftServer.LOGGER.info(String.format("%s executed command %s", event.getPlayer().getUsername(), event.getCommand())));
+        gEventHandler.addListener(PlayerCommandEvent.class, event -> MinecraftServer.LOGGER.info(String.format("%s executed command /%s", event.getPlayer().getUsername(), event.getCommand())));
     }
 }
