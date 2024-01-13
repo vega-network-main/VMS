@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37de4d1f-882c-402e-bd5d-d6a48896f09b" name="Changes" comment="Fix typo">
+    <list default="true" id="e16d75cb-2dbe-489d-9eb6-fc688212fe1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/PacketListenerSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/MineTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +43,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -46,11 +52,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2am6Ma2J4E09EZRZhAGHh13IUCN" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2atvcNGzfsuCXB9E673nIJ9Vq47" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -61,30 +66,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Projects/Java/untitled",
+    "last_opened_file_path": "D:/Projects/Java/VMS/gradle",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "debugger.hotswap",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.veganetwork.Main" />
-      <module name="VMS.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.veganetwork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.VMS [build]">
     <configuration name="VMS [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,38 +95,48 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="VMS [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="init" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.VMS [build]" />
+        <item itemvalue="Gradle.VMS [init]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="37de4d1f-882c-402e-bd5d-d6a48896f09b" name="Changes" comment="" />
-      <created>1704911361263</created>
+      <changelist id="e16d75cb-2dbe-489d-9eb6-fc688212fe1a" name="Changes" comment="" />
+      <created>1705150771068</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1704911361263</updated>
-      <workItem from="1704911363666" duration="16115000" />
-      <workItem from="1704977225255" duration="1192000" />
-      <workItem from="1705066872565" duration="783000" />
-      <workItem from="1705072593358" duration="3464000" />
-      <workItem from="1705085864841" duration="62000" />
-      <workItem from="1705087197203" duration="13467000" />
+      <updated>1705150771068</updated>
+      <workItem from="1705150773277" duration="773000" />
     </task>
-    <task id="LOCAL-00001" summary="Fix typo">
-      <created>1705100255141</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1705100255141</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,191 +153,78 @@
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix typo" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
-  </component>
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
       <map>
-        <entry key="03bb55">
+        <entry key="5995cd">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/MineTerminal.java" />
                 </list>
               </option>
-              <option name="id" value="03bb55" />
-              <option name="initiateTms" value="1704914134199" />
-              <option name="request" value="Make a change in setGenerator so that world has light level of 12F" />
+              <option name="id" value="5995cd" />
+              <option name="initiateTms" value="1705146655517" />
+              <option name="request" value="How to fix the following error:&#10;Non-static method 'readLine(java.lang.String)' cannot be referenced from a static context" />
               <option name="response" value="" />
-              <option name="responseDescription" value="To modify the `setGenerator` method in the `RunServer` class to set the light level of the world to 12F, you can update the existing code as follows:&#10;&#10;```java&#10;instanceContainer.setGenerator(unit -&gt; {&#10;    unit.modifier().fillHeight(0, 40, Block.DIRT);&#10;    unit.modifier().fillHeight(40, 41, Block.GRASS_BLOCK);&#10;    unit.modifier().setLightLevel(12F); // Set the light level to 12F&#10;});&#10;```&#10;&#10;This code sets the light level of the world by using the `setLightLevel` method of the `UnitModifier` class. The value `12F` represents the desired light level.&#10;&#10;Make sure to import the necessary classes:&#10;&#10;```java&#10;import net.minestom.server.instance.generator.UnitModifier;&#10;```&#10;&#10;Let me know if you need any further assistance!" />
+              <option name="responseDescription" value="The error message &quot;Non-static method 'readLine(java.lang.String)' cannot be referenced from a static context&quot; occurs because you are trying to invoke a non-static method `readLine()` from a static context. In your case, the `readLine()` method is being called from a static method `startTerminalThread()`.&#10;&#10;To fix this error, you have a couple of options:&#10;&#10;Option 1: Make the `readLine()` method static&#10;You can make the `readLine()` method static by modifying the `LineReader` class. However, since you don't have control over the `LineReader` class, this option is not feasible in your case.&#10;&#10;Option 2: Create an instance of the `LineReader` class&#10;Since the `readLine()` method is an instance method, you need to create an instance of the `LineReader` class to invoke it. Here's how you can modify your code to fix the error:&#10;&#10;```java&#10;public static void startTerminalThread() {&#10;    final Thread thread = new Thread(null, () -&gt; {&#10;        try {&#10;            terminal = TerminalBuilder.builder().system(true).dumb(true).encoding(&quot;UTF-8&quot;).name(&quot;VMS Console&quot;).build();&#10;        } catch (IOException IOE) {&#10;            throw new RuntimeException(IOE);&#10;        }&#10;        lineReader = LineReaderBuilder.builder().terminal(terminal).build();&#10;        run = true;&#10;        while (run) {&#10;            String input;&#10;            try {&#10;                input = lineReader.readLine(PREFIX); // Use the instance of LineReader to invoke readLine()&#10;            } catch (UserInterruptException exception) {&#10;                System.exit(0);&#10;                return;&#10;            }&#10;        }&#10;    }, &quot;VMS-Console.Service&quot;);&#10;    thread.setDaemon(true);&#10;    thread.start();&#10;}&#10;```&#10;&#10;By creating an instance of the `LineReader` class (`lineReader = LineReaderBuilder.builder().terminal(terminal).build();`), you can then invoke the `readLine()` method using that instance (`input = lineReader.readLine(PREFIX);`).&#10;&#10;I hope this helps! Let me know if you have any further questions." />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1704914138409" />
+              <option name="responseTms" value="1705146660248" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEvent.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/MineTerminal.java" />
                 </list>
               </option>
             </ChatHistoryModel>
           </value>
         </entry>
-        <entry key="221e84">
+        <entry key="632981">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/MineTerminal.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" />
                 </list>
               </option>
-              <option name="id" value="221e84" />
-              <option name="initiateTms" value="1704914583640" />
-              <option name="request" value="nope" />
+              <option name="id" value="632981" />
+              <option name="initiateTms" value="1705147152994" />
+              <option name="request" value="[13:56:59 INFO] [main]:&#10;[13:56:59 INFO] [main]: -- DEBUG INFO  --&#10;[13:56:59 INFO] [main]: Java: 17.0.9+8-LTS&#10;[13:56:59 INFO] [main]: Supported protocol: 763 (1.20.1)&#10;[13:56:59 INFO] [main]: -- END DEBUG   --&#10;[13:56:59 INFO] [main]:&#10;[13:56:59 INFO] [main]: Initializing VCS&#10;[13:57:00 INFO] [main]: Using MOJANG server mode.&#10;[Server Console]: [13:57:00 INFO] [main]: Starting VMCS server.&#10;[13:57:00 INFO] [main]: VMCS server started successfully.&#10;[13:57:00 INFO] [main]: VMCS has started, IP: 0.0.0.0, port: 26000&#10;ccc&#10;[Server Console]: c&#10;[Server Console]: yer&#10;[Server Console]: s&#10;[Server Console]: [13:58:11 INFO] [ForkJoinPool.commonPool-worker-2]: UUID of player vovamod is 3cbaa019-5974-4001-a0e6-5cec63d806e0&#10;&#10;&#10;could you add an integration to tiny log?" />
               <option name="response" value="" />
-              <option name="responseDescription" value="I apologize for the confusion. If there is no direct method to set the light level using the `UnitModifier` class in Minestom, you can try using the `setBlock` method to manually set the light level of each block.&#10;&#10;Here's an updated version of the `setGenerator` method that sets the light level of the world to 12F:&#10;&#10;```java&#10;instanceContainer.setGenerator(unit -&gt; {&#10;    unit.modifier().fillHeight(0, 40, Block.DIRT);&#10;    unit.modifier().fillHeight(40, 41, Block.GRASS_BLOCK);&#10;&#10;    for (int x = 0; x &lt; unit.getChunkSizeX(); x++) {&#10;        for (int y = 0; y &lt; unit.getChunkSizeY(); y++) {&#10;            for (int z = 0; z &lt; unit.getChunkSizeZ(); z++) {&#10;                unit.setBlock(x, y, z, Block.AIR);&#10;                unit.setSkyLight(x, y, z, 12);&#10;                unit.setBlockLight(x, y, z, 12);&#10;            }&#10;        }&#10;    }&#10;});&#10;```&#10;&#10;In this code, after filling the height with dirt and grass blocks, we iterate over each block in the chunk and set it to `Block.AIR` to remove any existing blocks. Then, we set the sky light and block light of each block to 12 to achieve the desired light level.&#10;&#10;Make sure to import the necessary classes:&#10;&#10;```java&#10;import net.minestom.server.instance.block.Block;&#10;```&#10;&#10;I apologize for any inconvenience caused. Let me know if you have any further questions!" />
+              <option name="responseDescription" value="Certainly! To integrate Tinylog into your code, you need to follow these steps:&#10;&#10;Step 1: Add Tinylog Dependency&#10;First, you need to add the Tinylog dependency to your project. You can do this by adding the following Maven dependency to your `pom.xml` file:&#10;&#10;```xml&#10;&lt;dependency&gt;&#10;    &lt;groupId&gt;org.tinylog&lt;/groupId&gt;&#10;    &lt;artifactId&gt;tinylog-api&lt;/artifactId&gt;&#10;    &lt;version&gt;2.2.1&lt;/version&gt;&#10;&lt;/dependency&gt;&#10;```&#10;&#10;Step 2: Configure Tinylog&#10;Next, you need to configure Tinylog to use the desired logging output. You can create a `tinylog.properties` file in your project's resources directory with the following content:&#10;&#10;```properties&#10;writer = file&#10;writer.filename = logs/application.log&#10;writer.format = {date: HH:mm:ss} [{thread}] {message}&#10;```&#10;&#10;This configuration will write log messages to a file named `application.log` in the `logs` directory of your project.&#10;&#10;Step 3: Update Logging Statements&#10;Now, you can update your logging statements to use Tinylog. Replace the existing `MinecraftServer.LOGGER.info()` statements with the following code:&#10;&#10;```java&#10;import org.tinylog.Logger;&#10;&#10;// ...&#10;&#10;Logger.info(&quot;Initializing VCS&quot;);&#10;```&#10;&#10;Step 4: Start Logging&#10;To start logging with Tinylog, you need to initialize it at the beginning of your `main()` method. Add the following line of code:&#10;&#10;```java&#10;import org.tinylog.Configurator;&#10;&#10;// ...&#10;&#10;public static void main(String[] args) {&#10;    Configurator.defaultConfig().activate();&#10;    &#10;    // ...&#10;}&#10;```&#10;&#10;This will activate the default Tinylog configuration and start logging according to the `tinylog.properties` file.&#10;&#10;That's it! With these steps, you have integrated Tinylog into your code, and it will start logging messages to the specified file. You can customize the logging configuration further by referring to the Tinylog documentation.&#10;&#10;Let me know if you need any further assistance!" />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1704914588443" />
+              <option name="responseTms" value="1705147158650" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEvent.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/MineTerminal.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/Main.java" />
                 </list>
               </option>
             </ChatHistoryModel>
           </value>
         </entry>
-        <entry key="535fa2">
+        <entry key="9592e5">
           <value>
             <ChatHistoryModel>
               <option name="contextFilesPaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/MineTerminal.java" />
                 </list>
               </option>
-              <option name="id" value="535fa2" />
-              <option name="initiateTms" value="1704914154671" />
-              <option name="request" value="there is no setLightLevel" />
+              <option name="id" value="9592e5" />
+              <option name="initiateTms" value="1705147178846" />
+              <option name="request" value="because Server Console is not in the logger" />
               <option name="response" value="" />
-              <option name="responseDescription" value="I apologize for the confusion. It seems that there is no direct method to set the light level using the `UnitModifier` class in Minestom. However, you can achieve the desired result by using a custom generator.&#10;&#10;Here's an updated version of the `setGenerator` method that sets the light level of the world to 12F:&#10;&#10;```java&#10;instanceContainer.setGenerator(unit -&gt; {&#10;    unit.setBlockModifier((x, y, z, block) -&gt; {&#10;        if (y &lt; 40) {&#10;            return Block.DIRT;&#10;        } else if (y == 40) {&#10;            return Block.GRASS_BLOCK;&#10;        } else {&#10;            return Block.AIR;&#10;        }&#10;    });&#10;&#10;    unit.setLightModifier((x, y, z, light) -&gt; {&#10;        if (y &lt; 40) {&#10;            return 0;&#10;        } else if (y == 40) {&#10;            return 12;&#10;        } else {&#10;            return 15;&#10;        }&#10;    });&#10;});&#10;```&#10;&#10;In this code, the `setBlockModifier` method is used to set the block types for each coordinate. Blocks below y=40 are set to `Block.DIRT`, y=40 is set to `Block.GRASS_BLOCK`, and blocks above y=40 are set to `Block.AIR`.&#10;&#10;The `setLightModifier` method is used to set the light level for each coordinate. Light levels below y=40 are set to 0, y=40 is set to 12, and light levels above y=40 are set to 15.&#10;&#10;Make sure to import the necessary classes:&#10;&#10;```java&#10;import net.minestom.server.instance.block.Block;&#10;```&#10;&#10;I apologize for any inconvenience caused. Let me know if you have any further questions!" />
+              <option name="responseDescription" value="Apologies for the confusion. If you want to redirect the output from the &quot;Server Console&quot; to Tinylog, you can create a custom `OutputStream` that writes to the Tinylog logger. Here's how you can modify your code to achieve this:&#10;&#10;Step 1: Create a Custom OutputStream&#10;Create a class that extends `OutputStream` and overrides the `write()` method to redirect the output to Tinylog. Here's an example implementation:&#10;&#10;```java&#10;import org.tinylog.Logger;&#10;&#10;import java.io.IOException;&#10;import java.io.OutputStream;&#10;&#10;public class TinylogOutputStream extends OutputStream {&#10;    private StringBuilder buffer = new StringBuilder();&#10;&#10;    @Override&#10;    public void write(int b) throws IOException {&#10;        if (b == '\n') {&#10;            Logger.info(&quot;[Server Console]: &quot; + buffer.toString());&#10;            buffer.setLength(0);&#10;        } else {&#10;            buffer.append((char) b);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;This class captures the output from the &quot;Server Console&quot; and logs it using Tinylog.&#10;&#10;Step 2: Update the Terminal Configuration&#10;Modify the `startTerminalThread()` method to redirect the output from the &quot;Server Console&quot; to the custom `OutputStream`. Here's the updated code:&#10;&#10;```java&#10;import java.io.IOException;&#10;import java.io.PrintStream;&#10;&#10;public class MineTerminal {&#10;    // ...&#10;&#10;    public static void startTerminalThread() {&#10;        final Thread thread = new Thread(null, () -&gt; {&#10;            try {&#10;                terminal = TerminalBuilder.builder().system(true).dumb(true).encoding(&quot;UTF-8&quot;).name(&quot;VMS Console&quot;).build();&#10;            } catch (IOException IOE) {&#10;                throw new RuntimeException(IOE);&#10;            }&#10;            lineReader = LineReaderBuilder.builder().terminal(terminal).build();&#10;            run = true;&#10;&#10;            // Redirect the output from System.out to the custom OutputStream&#10;            PrintStream originalOut = System.out;&#10;            System.setOut(new PrintStream(new TinylogOutputStream()));&#10;&#10;            while (run) {&#10;                String input;&#10;                try {&#10;                    input = lineReader.readLine(PREFIX);&#10;                    MinecraftServer.getCommandManager().execute(MinecraftServer.getCommandManager().getConsoleSender(), input);&#10;                } catch (EndOfFileException exception) {&#10;                    return;&#10;                } catch (UserInterruptException exception) {&#10;                    System.exit(0);&#10;                    return;&#10;                }&#10;            }&#10;&#10;            // Restore the original System.out&#10;            System.setOut(originalOut);&#10;        }, &quot;VMS-Console.Service&quot;);&#10;        thread.setDaemon(true);&#10;        thread.start();&#10;    }&#10;&#10;    // ...&#10;}&#10;```&#10;&#10;This code redirects the output from `System.out` to the custom `OutputStream` (`TinylogOutputStream`) that logs the messages using Tinylog. It also restores the original `System.out` after the terminal thread finishes.&#10;&#10;With these modifications, the output from the &quot;Server Console&quot; will be logged using Tinylog. Make sure you have followed the previous steps to configure Tinylog properly.&#10;&#10;Let me know if you have any further questions!" />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1704914161067" />
+              <option name="responseTms" value="1705147185947" />
               <option name="usedLocalFilePaths">
                 <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/PlayerMsgCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/CommandSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/EventSystem.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/GlobalInstance.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/RunServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/TeleportCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/GamemodeCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/configs/ConfigServer.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/commands/KillCommand.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/ServerEvent.java" />
-                </list>
-              </option>
-            </ChatHistoryModel>
-          </value>
-        </entry>
-        <entry key="c533d6">
-          <value>
-            <ChatHistoryModel>
-              <option name="contextFilesPaths">
-                <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
-                </list>
-              </option>
-              <option name="id" value="c533d6" />
-              <option name="initiateTms" value="1704912689409" />
-              <option name="request" value="make an ItemDropEvent using gEventHandler. So when a player drops object it will slightly drop forward from middle of the player to around 1 block distance" />
-              <option name="response" value="" />
-              <option name="responseDescription" value="To create an `ItemDropEvent` using `gEventHandler`, you can add the following code to the `PlayerEvent` class:&#10;&#10;```java&#10;gEventHandler.addListener(ItemDropEvent.class, event -&gt; {&#10;    Player player = event.getPlayer();&#10;    Pos playerPos = player.getPosition();&#10;    Pos dropPos = playerPos.add(player.getDirection().multiply(1)); // Move the drop position forward by 1 block&#10;&#10;    // Set the drop position slightly above the player's position&#10;    dropPos = dropPos.withY(dropPos.y() + 0.5);&#10;&#10;    // Spawn the dropped item at the calculated position&#10;    spawnItemStack(event.getItemStack(), dropPos, iContainer);&#10;});&#10;```&#10;&#10;This code listens for the `ItemDropEvent` and retrieves the player who dropped the item. It then calculates the drop position by adding the player's direction multiplied by 1 block to the player's position. The drop position is then adjusted slightly above the player's position to avoid the item being dropped inside the player. Finally, the `spawnItemStack` method is called to spawn the dropped item at the calculated position.&#10;&#10;Make sure to import the necessary classes and methods:&#10;&#10;```java&#10;import net.minestom.server.event.item.ItemDropEvent;&#10;import net.minestom.server.coordinate.Pos;&#10;import net.minestom.server.entity.Player;&#10;import static org.veganetwork.server.game.utilitaires.PlayerUtility.spawnItemStack;&#10;```&#10;&#10;Let me know if you need any further assistance!" />
-              <option name="responseFileName" value="" />
-              <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1704912693174" />
-              <option name="usedLocalFilePaths">
-                <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
-                </list>
-              </option>
-            </ChatHistoryModel>
-          </value>
-        </entry>
-        <entry key="db14a6">
-          <value>
-            <ChatHistoryModel>
-              <option name="contextFilesPaths">
-                <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
-                </list>
-              </option>
-              <option name="id" value="db14a6" />
-              <option name="initiateTms" value="1704919141399" />
-              <option name="request" value="gEventHandler.addListener(ItemDropEvent.class, event -&gt; {&#10;            Pos playerPos = event.getPlayer().getPosition();&#10;&#10;&#10;            Pos dropPos = new Pos(playerPos.x(),playerPos.y(),playerPos.z(),playerPos.yaw(),playerPos.pitch());&#10;&#10;&#10;&#10;            // Set the drop position slightly above the player's position&#10;            // Spawn the dropped item at the calculated position&#10;            spawnItemStack(event.getItemStack().material(), dropPos, iContainer);&#10;&#10;&#10;make it so it will drop item like it's moving from player to dropPos. also make dropPos to drop item to where players Pitch and Yaw are" />
-              <option name="response" value="" />
-              <option name="responseDescription" value="To make the dropped item move from the player's position to the `dropPos` while considering the player's pitch and yaw, you can modify the code as follows:&#10;&#10;```java&#10;gEventHandler.addListener(ItemDropEvent.class, event -&gt; {&#10;    Player player = event.getPlayer();&#10;    Pos playerPos = player.getPosition();&#10;&#10;    double distance = 1.0; // Distance from player to dropPos&#10;    double pitch = Math.toRadians(player.getPosition().pitch());&#10;    double yaw = Math.toRadians(player.getPosition().yaw());&#10;&#10;    double offsetX = -Math.sin(yaw) * Math.cos(pitch) * distance;&#10;    double offsetY = -Math.sin(pitch) * distance;&#10;    double offsetZ = Math.cos(yaw) * Math.cos(pitch) * distance;&#10;&#10;    Pos dropPos = playerPos.add(offsetX, offsetY, offsetZ);&#10;&#10;    // Set the drop position slightly above the player's position&#10;    dropPos = dropPos.withY(dropPos.y() + 0.5);&#10;&#10;    // Spawn the dropped item at the calculated position&#10;    spawnItemStack(event.getItemStack().material(), dropPos, iContainer);&#10;});&#10;```&#10;&#10;In this code, we calculate the offset values (`offsetX`, `offsetY`, `offsetZ`) based on the player's pitch and yaw. These offset values determine the direction and distance from the player's position to the `dropPos`. We then add these offset values to the player's position to calculate the final `dropPos`.&#10;&#10;Make sure to import the necessary classes:&#10;&#10;```java&#10;import net.minestom.server.coordinate.Pos;&#10;import net.minestom.server.entity.Player;&#10;import static org.veganetwork.server.game.utilitaires.PlayerUtility.spawnItemStack;&#10;```&#10;&#10;I apologize for any confusion caused earlier. Let me know if you have any further questions!" />
-              <option name="responseFileName" value="" />
-              <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1704919146138" />
-              <option name="usedLocalFilePaths">
-                <list>
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/events/PlayerEvent.java" />
-                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/PlayerUtility.java" />
+                  <option value="$PROJECT_DIR$/src/main/java/org/veganetwork/server/game/utilitaires/MineTerminal.java" />
                 </list>
               </option>
             </ChatHistoryModel>

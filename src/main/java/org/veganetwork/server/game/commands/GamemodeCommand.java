@@ -42,7 +42,7 @@ public class GamemodeCommand extends Command {
             {
                 sender.sendMessage(translatable("argument.player.entities").color(NamedTextColor.RED));
             } else {
-                if (entityFinder.find(null, sender instanceof Player ? (Entity) sender : null).size() == 0) {
+                if (entityFinder.find(null, sender instanceof Player ? (Entity) sender : null).isEmpty()) {
                     sender.sendMessage(translatable("argument.entity.notfound.player").color(NamedTextColor.RED));
                 } else {
                     entityFinder.find(null, sender instanceof Player ? (Entity) sender : null).forEach(entity -> {

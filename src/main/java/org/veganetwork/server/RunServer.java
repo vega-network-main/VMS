@@ -7,12 +7,10 @@ import net.minestom.server.extras.velocity.VelocityProxy;
 import net.minestom.server.instance.InstanceContainer;
 import net.minestom.server.instance.InstanceManager;
 import net.minestom.server.instance.block.Block;
-import net.minestom.server.instance.generator.UnitModifier;
-import net.minestom.server.instance.light.Light;
-import net.minestom.server.instance.palette.Palette;
 import org.veganetwork.server.game.CommandSystem;
 import org.veganetwork.server.game.EventSystem;
 import org.veganetwork.server.game.utilitaires.GlobalInstance;
+import org.veganetwork.server.game.utilitaires.MineTerminal;
 
 import static org.veganetwork.configs.ConfigServer.*;
 
@@ -26,6 +24,8 @@ public class RunServer {
 
         MinecraftServer.setBrandName(brand_name);
         MinecraftServer.setCompressionThreshold(network_compression);
+        MinecraftServer.setTerminalEnabled(true);
+        MineTerminal.startTerminalThread();
         InstanceManager instanceManager = MinecraftServer.getInstanceManager();
 
         // Init Instance and Events
