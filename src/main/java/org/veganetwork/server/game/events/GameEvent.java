@@ -6,18 +6,27 @@ import net.minestom.server.event.player.PlayerBlockPlaceEvent;
 import net.minestom.server.instance.InstanceContainer;
 import net.minestom.server.instance.block.Block;
 import org.jetbrains.annotations.NotNull;
-import org.veganetwork.server.game.utilitaires.BlockFacing;
+import org.veganetwork.server.game.utilitaires.BlockPlacement;
 
 public class GameEvent {
     public GameEvent(@NotNull GlobalEventHandler gEventHandler, InstanceContainer iContainer) {
         gEventHandler.addListener(PlayerBlockPlaceEvent.class, event -> {
             Block block = event.getBlock();
-            MinecraftServer.LOGGER.info(block.properties() + "\n" + String.valueOf((int) Math.floor((double) ((180.0F + event.getPlayer().getPosition().yaw()) * 16.0F / 360.0F) + 0.5D) & 15));
-            BlockFacing.NORTH.toString();
+            //MinecraftServer.LOGGER.info(block.properties().toString());
+            //MinecraftServer.LOGGER.info(String.valueOf((int) Math.floor((double) ((90.0F + event.getPlayer().getPosition().pitch()) / 180.0F) * 10)));
             if (block.getProperty("rotation") != null) {
-                var blockRotation = (int) Math.floor((double) ((180.0F + event.getPlayer().getPosition().yaw()) * 16.0F / 360.0F) + 0.5D) & 15;
+                int blockRotation = (int) Math.floor((double) ((180.0F + event.getPlayer().getPosition().yaw()) * 16.0F / 360.0F) + 0.5D) & 15;
 
                 event.setBlock(block.withProperty("rotation", String.valueOf(blockRotation)));
+            } else if (block.getProperty("facing") != null) {
+                int blockFacingX = (int) Math.floor((double) ((180.0F + event.getPlayer().getPosition().yaw()) * 16.0F / 360.0F) + 0.5D) & 15;
+                int blockFacingY = (int) Math.floor((double) ((90.0F + event.getPlayer().getPosition().pitch()) / 180.0F) * 10);
+
+                event.setBlock(block.withProperty("facing", String.valueOf(BlockPlacement.getFacing(blockFacingX, blockFacingY))));
+            } else if (block.getProperty("axis") != null) {
+                int blockAxisX = (int) Math.floor((double) ((180.0F + event.getPlayer().getPosition().yaw()) * 16.0F / 360.0F) + 0.5D) & 15;
+                int blockAxisY = (int) Math.floor((double) ((90.0F + event.getPlayer().getPosition().pitch()) / 180.0F) * 10);
+                event.setBlock(block.withProperty("axis", String.valueOf(BlockPlacement.getAxis(blockAxisX, blockAxisY))));
             }
 //            if (block.equals(Block.SAND)) {
 //                iContainer.scheduleNextTick(instance -> checkFall(instance, event.getBlockPosition()));

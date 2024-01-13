@@ -1,27 +1,36 @@
 package org.veganetwork.server.game.utilitaires;
 
-//public enum BlockFacing {
-//    NORTH(new int[]{15, 0, 1, 2}),
-//    EAST(new int[]{3, 4, 5, 6}),
-//    SOUTH(new int[]{7, 8, 9, 10}),
-//    WEST(new int[]{11, 12, 13, 14});
-//
-//    private final int[] intValue;
-//    BlockFacing(int[] input) {
-//        this.intValue = input;
-//    }
-//    public int[] getIntValues() {
-//        return intValue;
-//    }
-//}
-public class BlockFacing {
-    public static String getDirection(int input) {
-        return switch (input) {
-            case 0, 1, 2, 15 -> "south";
-            case 3, 4, 5, 6 -> "west";
-            case 7, 8, 9, 10 -> "north";
-            case 11, 12, 13, 14 -> "east";
-            default -> "east";
-        };
+import net.minestom.server.MinecraftServer;
+
+import java.util.List;
+public class BlockPlacement {
+    private static final List<Integer> Y = List.of(4,5,6);
+    public static String getFacing(int inputX, int inputY) {
+        MinecraftServer.LOGGER.info(String.valueOf(!Y.contains(inputY)));
+        MinecraftServer.LOGGER.info(inputX + " " + inputY);
+        if(Y.contains(inputY)) {
+            return switch (inputX) {
+                case 0, 1, 2, 15 -> "south";
+                case 3, 4, 5, 6 -> "west";
+                case 7, 8, 9, 10 -> "north";
+                default -> "east";
+            };
+        } else {
+            return switch (inputY) {
+                case 0, 1, 2, 3 -> "down";
+                case 7, 8, 9, 10 -> "up";
+                default -> null;
+            };
+        }
+    }
+    public static String getAxis(int inputX, int inputY) {
+        if(Y.contains(inputY)) {
+            return switch (inputX) {
+                case 0, 1, 2, 7, 8, 9, 10, 15 -> "z";
+                default -> "x";
+            };
+        } else {
+            return "y";
+        }
     }
 }
