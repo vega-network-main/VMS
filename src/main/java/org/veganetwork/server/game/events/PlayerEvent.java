@@ -10,21 +10,21 @@ import net.minestom.server.event.GlobalEventHandler;
 import net.minestom.server.event.item.ItemDropEvent;
 import net.minestom.server.event.item.PickupItemEvent;
 import net.minestom.server.event.player.*;
+import net.minestom.server.event.trait.PlayerInstanceEvent;
 import net.minestom.server.instance.InstanceContainer;
 import net.minestom.server.instance.block.Block;
 import net.minestom.server.item.Material;
 
-import static org.veganetwork.server.game.utilitaires.PlayerUtility.getRandomValueInRange;
 import static org.veganetwork.server.game.utilitaires.PlayerUtility.spawnItemStack;
 
 
 public class PlayerEvent {
     public PlayerEvent(GlobalEventHandler gEventHandler, InstanceContainer iContainer) {
-        gEventHandler.addListener(PlayerLoginEvent.class, event -> {
+        gEventHandler.addListener(AsyncPlayerConfigurationEvent.class, event -> {
             final Player player = event.getPlayer();
             event.setSpawningInstance(iContainer);
             player.setRespawnPoint(new Pos(0, 42, 0));
-            MinecraftServer.LOGGER.info("%p has joined the server".replace("%p", player.getUsername()));
+            MinecraftServer.LOGGER.info("%p has joined the server".replace("%p", event.getPlayer().getUsername()));
         });
         gEventHandler.addListener(PlayerDisconnectEvent.class, event -> {
             final Player player = event.getPlayer();

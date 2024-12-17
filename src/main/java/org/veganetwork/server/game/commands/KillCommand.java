@@ -1,6 +1,7 @@
 package org.veganetwork.server.game.commands;
 
 import net.minestom.server.command.builder.Command;
+import net.minestom.server.command.builder.arguments.ArgumentString;
 import net.minestom.server.command.builder.arguments.ArgumentType;
 import net.minestom.server.entity.Player;
 import org.veganetwork.server.game.utilitaires.PlayerUtility;
@@ -11,7 +12,7 @@ public class KillCommand extends Command {
         setDefaultExecutor(((sender, context) ->
                 sender.sendMessage("Usage: /kill <player_name>"))
         );
-        var playerArgument = ArgumentType.String("player_id");
+        ArgumentString playerArgument = ArgumentType.String("player_id");
 
         addSyntax((sender, context) -> {
             String playerName = context.get(playerArgument);

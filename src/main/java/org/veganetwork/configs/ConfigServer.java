@@ -1,7 +1,6 @@
 package org.veganetwork.configs;
 
-import dev.dejvokep.boostedyaml.YamlDocument;
-import dev.dejvokep.boostedyaml.route.Route;
+import com.electronwill.nightconfig.core.file.FileConfig;
 
 public class ConfigServer {
     public static int server_port;
@@ -12,17 +11,18 @@ public class ConfigServer {
     public static String brand_name;
     public static String velocity_secret;
     public static String server_mode;
-    public ConfigServer(YamlDocument config) {
+    public ConfigServer(FileConfig config) {
+        config.load();
         InitVar(config);
     }
-    private void InitVar(YamlDocument config) {
-        server_ip = config.getString(Route.from("server_ip"));
-        server_port = config.getInt(Route.from("server_port"));
-        network_compression = config.getInt(Route.from("network_compression"));
-        motd = config.getString(Route.from("motd"));
-        max_players = config.getInt(Route.from("max_players"));
-        brand_name = config.getString(Route.from("brand_name"));
-        velocity_secret = config.getString(Route.from("velocity_secret"));
-        server_mode = config.getString(Route.from("server_mode"));
+    private void InitVar(FileConfig config) {
+        server_ip = config.get("server_ip");
+        server_port = config.getInt("server_port");
+        network_compression = config.getInt("network_compression");
+        motd = config.get("motd");
+        max_players = config.getInt("max_players");
+        brand_name = config.get("brand_name");
+        velocity_secret = config.get("velocity_secret");
+        server_mode = config.get("server_mode");
     }
 }

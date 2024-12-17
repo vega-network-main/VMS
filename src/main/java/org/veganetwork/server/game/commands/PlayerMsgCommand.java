@@ -1,5 +1,6 @@
 package org.veganetwork.server.game.commands;
 
+import net.kyori.adventure.chat.SignedMessage;
 import net.kyori.adventure.text.Component;
 import net.minestom.server.command.builder.Command;
 import net.minestom.server.command.builder.arguments.ArgumentType;
@@ -20,7 +21,6 @@ public class PlayerMsgCommand extends Command {
             String playerName = context.get(playerArgument);
             String playerMsg = context.get(playerMessage);
             Player player = PlayerUtility.findPlayer(playerName);
-
             if (player != null) {
                 player.sendMessage(sender, Component.text(playerMsg));
                 sender.sendMessage(String.format("You sent a message to %s.", playerName));

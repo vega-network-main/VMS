@@ -7,7 +7,7 @@ public class BlockPlacement {
     private static final List<Integer> Y = List.of(4,5,6);
     public static String getFacing(int inputX, int inputY) {
         MinecraftServer.LOGGER.info(String.valueOf(!Y.contains(inputY)));
-        MinecraftServer.LOGGER.info(inputX + " " + inputY);
+        MinecraftServer.LOGGER.info("{} {}", inputX, inputY);
         if(Y.contains(inputY)) {
             return switch (inputX) {
                 case 0, 1, 2, 15 -> "south";

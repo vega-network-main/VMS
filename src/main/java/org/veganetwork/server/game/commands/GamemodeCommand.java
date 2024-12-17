@@ -36,9 +36,7 @@ public class GamemodeCommand extends Command {
             String gamemode = context.get(gamemodeArgument);
             EntityFinder entityFinder = context.get(entityArgument);
 
-            if (entityFinder.find(null, sender instanceof Player ? (Entity) sender : null).stream()
-                .filter(e -> !e.getEntityType().equals(EntityType.PLAYER))
-                .count() > 0)
+            if (entityFinder.find(null, sender instanceof Player ? (Entity) sender : null).stream().anyMatch(e -> !e.getEntityType().equals(EntityType.PLAYER)))
             {
                 sender.sendMessage(translatable("argument.player.entities").color(NamedTextColor.RED));
             } else {

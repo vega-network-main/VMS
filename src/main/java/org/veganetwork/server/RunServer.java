@@ -10,7 +10,6 @@ import net.minestom.server.instance.block.Block;
 import org.veganetwork.server.game.CommandSystem;
 import org.veganetwork.server.game.EventSystem;
 import org.veganetwork.server.game.utilitaires.GlobalInstance;
-import org.veganetwork.server.game.utilitaires.MineTerminal;
 
 import static org.veganetwork.configs.ConfigServer.*;
 
@@ -24,8 +23,7 @@ public class RunServer {
 
         MinecraftServer.setBrandName(brand_name);
         MinecraftServer.setCompressionThreshold(network_compression);
-        MinecraftServer.setTerminalEnabled(true);
-        MineTerminal.startTerminalThread();
+        //MineTerminal.startTerminalThread();
         InstanceManager instanceManager = MinecraftServer.getInstanceManager();
 
         // Init Instance and Events
@@ -44,7 +42,7 @@ public class RunServer {
         new CommandSystem(instanceContainer);
         new GlobalInstance(instanceContainer);
 
-        MinecraftServer.LOGGER.info(String.format("Using %s server mode.", server_mode.toUpperCase()));
+        MinecraftServer.LOGGER.info("Using {} server mode.", server_mode.toUpperCase());
         switch (server_mode.toUpperCase()) {
             case "OFFLINE":
                 break;
@@ -59,6 +57,6 @@ public class RunServer {
 
         server.start(server_ip, server_port);
 
-        MinecraftServer.LOGGER.info(brand_name + " has started, IP: " +server_ip+ ", port: " +server_port);
+        MinecraftServer.LOGGER.info("{} has started, IP: {}, port: {}", brand_name, server_ip, server_port);
     }
 }
